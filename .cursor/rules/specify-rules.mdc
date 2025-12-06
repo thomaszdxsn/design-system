@@ -1,0 +1,29 @@
+# design-system Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2025-12-06
+
+## Active Technologies
+
+- TypeScript (strict) on Bun 1.0+; Next.js App Router (14+ target) + Next.js, Tailwind CSS + `tailwindcss-animate`, Biome, Husky, Bun test, `lucide-react`, `zod`, local `cn()` utils (001-bun-biome-registry)
+
+## Project Structure
+
+```text
+src/
+tests/
+```
+
+## Commands
+
+npm test && npm run lint
+
+## Code Style
+
+TypeScript (strict) on Bun 1.0+; Next.js App Router (14+ target): Follow standard conventions
+
+## Recent Changes
+
+- 001-bun-biome-registry: Added TypeScript (strict) on Bun 1.0+; Next.js App Router (14+ target) + Next.js, Tailwind CSS + `tailwindcss-animate`, Biome, Husky, Bun test, `lucide-react`, `zod`, local `cn()` utils
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->
