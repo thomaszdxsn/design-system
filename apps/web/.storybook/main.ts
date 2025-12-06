@@ -1,12 +1,11 @@
-import path, { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import path from "node:path";
 
+import type { StorybookConfig } from "@storybook/react-vite";
 import autoprefixer from "autoprefixer";
 import tailwindcss from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 import { mergeConfig } from "vite";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import type { UserConfig } from "vite";
 
 const storyContentGlobs = [
   path.resolve(__dirname, "../components/**/*.{ts,tsx,mdx}"),
@@ -15,7 +14,7 @@ const storyContentGlobs = [
 
 // 直接定义 tailwind 配置，避免动态导入
 const storybookTailwindConfig = {
-  darkMode: ["class"],
+  darkMode: "class" as const,
   content: storyContentGlobs,
   theme: {
     extend: {
@@ -64,8 +63,7 @@ const storybookTailwindConfig = {
   plugins: [tailwindcssAnimate],
 };
 
-/** @type {import('@storybook/react-vite').StorybookConfig} */
-const config = {
+const config: StorybookConfig = {
   stories: [
     "../components/**/*.stories.@(ts|tsx|mdx)",
     "../components/**/*.mdx",
@@ -88,7 +86,7 @@ const config = {
   docs: {
     autodocs: "tag",
   },
-  viteFinal: async (viteConfig) =>
+  viteFinal: async (viteConfig: UserConfig) =>
     mergeConfig(viteConfig, {
       resolve: {
         alias: [
@@ -105,7 +103,7 @@ const config = {
           plugins: [
             tailwindcss(storybookTailwindConfig),
             autoprefixer(),
-            ...(viteConfig.css?.postcss?.plugins ?? []),
+            ...((viteConfig.css?.postcss as { plugins?: unknown[] })?.plugins ?? []),
           ],
         },
       },
