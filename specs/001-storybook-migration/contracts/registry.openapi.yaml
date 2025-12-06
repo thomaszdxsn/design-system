@@ -1,0 +1,63 @@
+openapi: 3.1.0
+info:
+  title: Design System Registry
+  version: "1.0.0"
+  description: |
+    静态注册表产物，供下游脚本消费。构建后位于 `/registry.json`，
+    dev 模式输出到 `apps/web/public/registry/registry.json`，
+    build 模式输出到 `apps/web/storybook-static/registry/registry.json`。
+servers:
+  - url: /
+paths:
+  /registry.json:
+    get:
+      summary: 获取组件注册表
+      responses:
+        "200":
+          description: 注册表 JSON，向后兼容既有字段
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Registry"
+components:
+  schemas:
+    Registry:
+      type: object
+      properties:
+        components:
+          type: array
+          items:
+            $ref: "#/components/schemas/RegistryEntry"
+      required: [components]
+    RegistryEntry:
+      type: object
+      properties:
+        name:
+          type: string
+        title:
+          type: string
+        files:
+          type: array
+          items: { type: string }
+        registryDependencies:
+          type: array
+          items: { type: string }
+        npmDependencies:
+          type: object
+          additionalProperties: { type: string }
+        tailwind:
+          type: object
+          additionalProperties: true
+        copy:
+          type: array
+          items:
+            $ref: "#/components/schemas/CopyCommand"
+      required: [name, files]
+    CopyCommand:
+      type: object
+      properties:
+        id: { type: string }
+        kind: { type: string, enum: ["install", "import", "usage"] }
+        content: { type: string }
+        description: { type: string }
+

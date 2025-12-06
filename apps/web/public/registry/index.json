@@ -1,9 +1,39 @@
 {
   "components": [
     {
-      "id": "button",
-      "name": "Button",
+      "id": "button.stories",
+      "name": "button.stories",
       "category": "ui",
+      "version": "2025-12-06"
+    },
+    {
+      "id": "button",
+      "name": "button",
+      "category": "ui",
+      "version": "2025-12-06"
+    },
+    {
+      "id": "copy-button.stories",
+      "name": "copy-button.stories",
+      "category": "ui",
+      "version": "2025-12-06"
+    },
+    {
+      "id": "copy-button",
+      "name": "copy-button",
+      "category": "ui",
+      "version": "2025-12-06"
+    },
+    {
+      "id": "spotlight.stories",
+      "name": "spotlight.stories",
+      "category": "magic",
+      "version": "2025-12-06"
+    },
+    {
+      "id": "spotlight",
+      "name": "spotlight",
+      "category": "magic",
       "version": "2025-12-06"
     }
   ]

@@ -1,0 +1,17 @@
+import { Meta, ArgTypes, Canvas } from "@storybook/blocks";
+import { Button } from "./button";
+import * as Stories from "./button.stories";
+
+<Meta of={Stories} title="UI/Button Docs" />
+
+# Button
+
+轻量的按钮组件，提供 variant/size 组合和无障碍焦点态。
+
+## Props
+
+<ArgTypes of={Button} />
+
+## 示例
+
+<Canvas of={Stories.Variants} />

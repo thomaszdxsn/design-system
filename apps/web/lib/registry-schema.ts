@@ -16,19 +16,29 @@ export interface CopyCommand {
   bun: string;
 }
 
+export interface CopyCommandEntry {
+  id: string;
+  kind: "install" | "import" | "usage";
+  content: string;
+  description?: string;
+  componentId?: string;
+}
+
 export interface TailwindConfig {
   config?: string;
   css?: string;
 }
 
 export interface RegistryEntry {
-  id: string;
+  id?: string;
   name: string;
+  title?: string;
   files: RegistryFile[];
   registryDependencies: string[];
   npmDependencies: string[];
   tailwind?: TailwindConfig;
-  copyCommand: CopyCommand;
+  copy?: CopyCommandEntry[];
+  copyCommand?: CopyCommand;
   checksum?: string;
   updatedAt?: string;
 }
