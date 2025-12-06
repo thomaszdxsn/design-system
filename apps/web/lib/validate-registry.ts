@@ -31,12 +31,16 @@ export function validateRegistryEntry(entry: unknown): ValidationResult {
   const e = entry as Partial<RegistryEntry>;
 
   // Required fields
-  if (!e.id || typeof e.id !== "string") {
-    errors.push({ field: "id", message: "id is required and must be a string" });
+  if (e.id && typeof e.id !== "string") {
+    errors.push({ field: "id", message: "id must be a string when provided" });
   }
 
   if (!e.name || typeof e.name !== "string") {
     errors.push({ field: "name", message: "name is required and must be a string" });
+  }
+
+  if (e.title && typeof e.title !== "string") {
+    errors.push({ field: "title", message: "title must be a string when provided" });
   }
 
   if (!Array.isArray(e.files) || e.files.length === 0) {
@@ -57,18 +61,19 @@ export function validateRegistryEntry(entry: unknown): ValidationResult {
     });
   }
 
-  if (!e.copyCommand || typeof e.copyCommand !== "object") {
-    errors.push({
-      field: "copyCommand",
-      message: "copyCommand is required and must be an object",
-    });
-  } else {
+  if (e.copyCommand) {
     const cmd = e.copyCommand;
     if (!cmd.npm || !cmd.pnpm || !cmd.bun) {
       errors.push({
         field: "copyCommand",
         message: "copyCommand must have npm, pnpm, and bun fields",
       });
+    }
+  }
+
+  if (e.copy) {
+    if (!Array.isArray(e.copy)) {
+      errors.push({ field: "copy", message: "copy must be an array when provided" });
     }
   }
 

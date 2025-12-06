@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@design-system/utils/cn";
+import { cn } from "@/lib/utils";
 
 export interface CopyCommandProps {
   npm: string;

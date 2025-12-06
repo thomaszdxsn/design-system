@@ -4,24 +4,22 @@
  */
 
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
-import { join, relative, basename } from "node:path";
+import { join, relative, basename, resolve } from "node:path";
 import { createHash } from "node:crypto";
-import {
-  getComponentRoot,
-  getRegistryOutputDir,
-  COMPONENT_ROOTS,
-  type ComponentRoot,
-} from "../apps/web/lib/registry-paths";
+import { getComponentRoot, COMPONENT_ROOTS, type ComponentRoot } from "../apps/web/lib/registry-paths";
 import type {
   RegistryEntry,
   RegistryIndex,
   RegistrySummary,
   ComponentCategory,
+  CopyCommandEntry,
 } from "../apps/web/lib/registry-schema";
 import { validateRegistryEntry } from "../apps/web/lib/validate-registry";
 
 const REGISTRY_VERSION = "2025-12-06";
 const BUILD_BUDGET_MS = 1000; // SC-002
+const DEFAULT_DEV_OUT = "apps/web/public/registry";
+const DEFAULT_BUILD_OUT = "apps/web/storybook-static/registry";
 
 interface ComponentMetadata {
   id: string;
@@ -145,6 +143,32 @@ function generateCopyCommand(id: string, category: string): {
   };
 }
 
+function buildCopyEntries(id: string, commands: { npm: string; pnpm: string; bun: string }): CopyCommandEntry[] {
+  return [
+    {
+      id: `${id}-install`,
+      kind: "install",
+      content: commands.pnpm,
+      description: "pnpm 安装（首选）",
+      componentId: id,
+    },
+    {
+      id: `${id}-import`,
+      kind: "import",
+      content: `import { ${id} } from "@/components/ui/${id}";`,
+      description: "示例导入路径",
+      componentId: id,
+    },
+    {
+      id: `${id}-usage`,
+      kind: "usage",
+      content: `<${id.charAt(0).toUpperCase() + id.slice(1)}>Example</${id.charAt(0).toUpperCase() + id.slice(1)}>\n`,
+      description: "基础用法",
+      componentId: id,
+    },
+  ];
+}
+
 /**
  * Build registry entry from component metadata
  */
@@ -158,9 +182,12 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
     registryDeps.push("utils");
   }
 
+  const commands = generateCopyCommand(component.id, component.category);
+
   const entry: RegistryEntry = {
     id: component.id,
-    name: component.name,
+    name: component.id,
+    title: component.name,
     files: [
       {
         path: `components/${component.category}/${component.id}.tsx`,
@@ -169,7 +196,9 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
     ],
     registryDependencies: registryDeps,
     npmDependencies: deps.npm,
-    copyCommand: generateCopyCommand(component.id, component.category),
+    tailwind: { config: "@design-system/config/tailwind.config" },
+    copy: buildCopyEntries(component.id, commands),
+    copyCommand: commands,
     checksum,
     updatedAt: new Date().toISOString(),
   };
@@ -228,17 +257,20 @@ async function buildRegistry(): Promise<void> {
     console.log(`✓ Built ${component.id}`);
   }
 
-  // Ensure output directory exists
-  const outputDir = getRegistryOutputDir();
+  // Determine output dir
+  const argvOut = process.argv.find((arg) => arg.startsWith("--out="))?.split("=")[1];
+  const outputDir = resolve(process.cwd(), argvOut || (process.env.NODE_ENV === "production" ? DEFAULT_BUILD_OUT : DEFAULT_DEV_OUT));
+
   await mkdir(outputDir, { recursive: true });
 
-  // Write individual component files
-  for (const entry of entries) {
-    const filePath = join(outputDir, `${entry.id}.json`);
-    await writeFile(filePath, JSON.stringify(entry, null, 2));
-  }
+  const registryPayload = {
+    components: entries,
+    version: REGISTRY_VERSION,
+  };
+  const registryPath = join(outputDir, "registry.json");
+  await writeFile(registryPath, JSON.stringify(registryPayload, null, 2));
 
-  // Write index file
+  // Write index file (summaries)
   const index: RegistryIndex = {
     components: summaries,
   };

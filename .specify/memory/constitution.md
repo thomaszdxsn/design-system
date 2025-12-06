@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: unversioned → 1.0.0
-- Modified principles: defined initial set (SSOT, Copy-Paste, Translation, Performance, Stack Lock)
-- Added sections: Engineering Standards & Protocols; Delivery Workflow & Language
+- Version change: 1.0.0 → 2.0.0
+- Modified principles: Technology Stack Lock updated for Storybook 8 (Vite builder) as doc framework
+- Added sections: none
 - Removed sections: none
 - Templates updated: ✅ .specify/templates/plan-template.md ; ✅ .specify/templates/tasks-template.md
 - Follow-ups: none
@@ -25,7 +25,7 @@ Sync Impact Report
 开发体验必须“瞬时”；任何操作超过 1 秒视为违约，需优先优化（以 Bun 工具链保障）。
 
 ### V. Technology Stack Lock
-技术栈固定：Bun、Biome、Husky、Next.js（App Router）、Tailwind CSS + tailwindcss-animate、Lucide React、Zod。禁止引入替代品。
+技术栈固定：Bun、Biome、Husky、Storybook 8（Vite builder）+ React 18 + TypeScript、Tailwind CSS + tailwindcss-animate、Lucide React、Zod。禁止引入替代品；Next.js App Router 仅作为示例宿主/兼容层，不再作为文档框架锁定。
 
 ## Engineering Standards & Protocols
 
@@ -78,6 +78,7 @@ root/
 │   │   ├── magic/          # 特效组件 (Meteor, Glow)
 │   │   └── blocks/         # 组合区块 (Pricing Section)
 │   └── public/registry/    # [Generated] 禁止手动编辑
+│   └── storybook-static/   # [Generated] Storybook build 输出（含 registry.json 根映射）
 ├── packages/
 │   ├── config/             # 共享配置 (Biome, Tailwind)
 │   └── utils/              # 共享工具函数
@@ -101,4 +102,4 @@ root/
 - 合规审查：PR 审查需验证技术栈锁定、Shadcnify 清洗、目录放置、注册表声明、命名导出与无 `console.log` 等要求。
 - 例外管理：如需违反原则，必须在计划与评审中记录理由与临时性，并在后续版本纠偏。
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
+**Version**: 2.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06

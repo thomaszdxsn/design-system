@@ -1,0 +1,307 @@
+{
+  "components": [
+    {
+      "id": "button.stories",
+      "name": "button.stories",
+      "title": "Button.stories",
+      "files": [
+        {
+          "path": "components/ui/button.stories.tsx",
+          "content": "import type { Meta, StoryObj } from \"@storybook/react\";\nimport { userEvent, within } from \"@storybook/test\";\n\nimport { Button, type ButtonProps } from \"./button\";\n\nconst meta: Meta<ButtonProps> = {\n  title: \"UI/Button\",\n  component: Button,\n  argTypes: {\n    variant: {\n      control: \"select\",\n      options: [\"default\", \"destructive\", \"outline\", \"secondary\", \"ghost\", \"link\"],\n    },\n    size: {\n      control: \"select\",\n      options: [\"default\", \"sm\", \"lg\", \"icon\"],\n    },\n  },\n  parameters: {\n    backgrounds: {\n      default: \"light\",\n      values: [\n        { name: \"light\", value: \"var(--background)\" },\n        { name: \"dark\", value: \"hsl(var(--foreground))\" },\n      ],\n    },\n  },\n};\n\nexport default meta;\n\ntype Story = StoryObj<ButtonProps>;\n\nexport const Default: Story = {\n  args: { children: \"Button\" },\n};\n\nexport const Variants: Story = {\n  render: (args) => (\n    <div className=\"flex flex-wrap gap-3\">\n      <Button {...args} variant=\"default\">\n        Default\n      </Button>\n      <Button {...args} variant=\"destructive\">\n        Destructive\n      </Button>\n      <Button {...args} variant=\"outline\">\n        Outline\n      </Button>\n      <Button {...args} variant=\"secondary\">\n        Secondary\n      </Button>\n      <Button {...args} variant=\"ghost\">\n        Ghost\n      </Button>\n      <Button {...args} variant=\"link\">\n        Link\n      </Button>\n    </div>\n  ),\n  args: { children: \"Button\" },\n};\n\nexport const Sizes: Story = {\n  render: (args) => (\n    <div className=\"flex flex-wrap items-center gap-3\">\n      <Button {...args} size=\"sm\">\n        Small\n      </Button>\n      <Button {...args} size=\"default\">\n        Default\n      </Button>\n      <Button {...args} size=\"lg\">\n        Large\n      </Button>\n      <Button {...args} size=\"icon\" aria-label=\"Icon button\">\n        ⭐️\n      </Button>\n    </div>\n  ),\n  args: { children: \"Button\" },\n};\n\nexport const Interactions: Story = {\n  args: { children: \"Click me\" },\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const button = await canvas.findByRole(\"button\", { name: /click me/i });\n    await userEvent.click(button);\n  },\n};\n\n"
+        }
+      ],
+      "registryDependencies": [],
+      "npmDependencies": [
+        "@storybook/react",
+        "@storybook/test"
+      ],
+      "tailwind": {
+        "config": "@design-system/config/tailwind.config"
+      },
+      "copy": [
+        {
+          "id": "button.stories-install",
+          "kind": "install",
+          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json",
+          "description": "pnpm 安装（首选）",
+          "componentId": "button.stories"
+        },
+        {
+          "id": "button.stories-import",
+          "kind": "import",
+          "content": "import { button.stories } from \"@/components/ui/button.stories\";",
+          "description": "示例导入路径",
+          "componentId": "button.stories"
+        },
+        {
+          "id": "button.stories-usage",
+          "kind": "usage",
+          "content": "<Button.stories>Example</Button.stories>\n",
+          "description": "基础用法",
+          "componentId": "button.stories"
+        }
+      ],
+      "copyCommand": {
+        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json"
+      },
+      "checksum": "f444c06e3fd10c39",
+      "updatedAt": "2025-12-06T12:35:06.401Z"
+    },
+    {
+      "id": "button",
+      "name": "button",
+      "title": "Button",
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "content": "import * as React from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  variant?: \"default\" | \"destructive\" | \"outline\" | \"secondary\" | \"ghost\" | \"link\";\n  size?: \"default\" | \"sm\" | \"lg\" | \"icon\";\n}\n\nconst variantStyles = {\n  default: \"bg-primary text-primary-foreground hover:bg-primary/90\",\n  destructive: \"bg-destructive text-destructive-foreground hover:bg-destructive/90\",\n  outline: \"border border-input bg-background hover:bg-accent hover:text-accent-foreground\",\n  secondary: \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n  ghost: \"hover:bg-accent hover:text-accent-foreground\",\n  link: \"text-primary underline-offset-4 hover:underline\",\n};\n\nconst sizeStyles = {\n  default: \"h-10 px-4 py-2\",\n  sm: \"h-9 rounded-md px-3\",\n  lg: \"h-11 rounded-md px-8\",\n  icon: \"h-10 w-10\",\n};\n\nexport const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(\n  ({ className, variant = \"default\", size = \"default\", ...props }, ref) => {\n    return (\n      <button\n        className={cn(\n          \"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50\",\n          variantStyles[variant],\n          sizeStyles[size],\n          className,\n        )}\n        ref={ref}\n        {...props}\n      />\n    );\n  },\n);\n\nButton.displayName = \"Button\";\n"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "npmDependencies": [
+        "react",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "tailwind": {
+        "config": "@design-system/config/tailwind.config"
+      },
+      "copy": [
+        {
+          "id": "button-install",
+          "kind": "install",
+          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json",
+          "description": "pnpm 安装（首选）",
+          "componentId": "button"
+        },
+        {
+          "id": "button-import",
+          "kind": "import",
+          "content": "import { button } from \"@/components/ui/button\";",
+          "description": "示例导入路径",
+          "componentId": "button"
+        },
+        {
+          "id": "button-usage",
+          "kind": "usage",
+          "content": "<Button>Example</Button>\n",
+          "description": "基础用法",
+          "componentId": "button"
+        }
+      ],
+      "copyCommand": {
+        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json",
+        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json"
+      },
+      "checksum": "10d19c674e50497a",
+      "updatedAt": "2025-12-06T12:35:06.404Z"
+    },
+    {
+      "id": "copy-button.stories",
+      "name": "copy-button.stories",
+      "title": "Copy Button.stories",
+      "files": [
+        {
+          "path": "components/ui/copy-button.stories.tsx",
+          "content": "import type { Meta, StoryObj } from \"@storybook/react\";\nimport { userEvent, within } from \"@storybook/test\";\n\nimport { CopyButton, type CopyButtonProps } from \"./copy-button\";\n\nconst meta: Meta<CopyButtonProps> = {\n  title: \"UI/CopyButton\",\n  component: CopyButton,\n};\n\nexport default meta;\n\ntype Story = StoryObj<CopyButtonProps>;\n\nexport const Default: Story = {\n  args: {\n    value: \"pnpm dlx shadcn@latest add https://example.com/registry/button.json\",\n    children: \"复制指令\",\n  },\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const button = await canvas.findByRole(\"button\", { name: /复制指令/i });\n    await userEvent.click(button);\n  },\n};\n\n"
+        }
+      ],
+      "registryDependencies": [],
+      "npmDependencies": [
+        "@storybook/react",
+        "@storybook/test"
+      ],
+      "tailwind": {
+        "config": "@design-system/config/tailwind.config"
+      },
+      "copy": [
+        {
+          "id": "copy-button.stories-install",
+          "kind": "install",
+          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json",
+          "description": "pnpm 安装（首选）",
+          "componentId": "copy-button.stories"
+        },
+        {
+          "id": "copy-button.stories-import",
+          "kind": "import",
+          "content": "import { copy-button.stories } from \"@/components/ui/copy-button.stories\";",
+          "description": "示例导入路径",
+          "componentId": "copy-button.stories"
+        },
+        {
+          "id": "copy-button.stories-usage",
+          "kind": "usage",
+          "content": "<Copy-button.stories>Example</Copy-button.stories>\n",
+          "description": "基础用法",
+          "componentId": "copy-button.stories"
+        }
+      ],
+      "copyCommand": {
+        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json"
+      },
+      "checksum": "2ae9a236d9380cfb",
+      "updatedAt": "2025-12-06T12:35:06.404Z"
+    },
+    {
+      "id": "copy-button",
+      "name": "copy-button",
+      "title": "Copy Button",
+      "files": [
+        {
+          "path": "components/ui/copy-button.tsx",
+          "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface CopyButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  value: string;\n  successLabel?: string;\n  fallbackLabel?: string;\n}\n\nasync function copyWithFallback(text: string): Promise<boolean> {\n  try {\n    await navigator.clipboard.writeText(text);\n    return true;\n  } catch {\n    try {\n      const textarea = document.createElement(\"textarea\");\n      textarea.value = text;\n      textarea.setAttribute(\"readonly\", \"\");\n      textarea.style.position = \"absolute\";\n      textarea.style.left = \"-9999px\";\n      document.body.appendChild(textarea);\n      textarea.select();\n      const result = document.execCommand(\"copy\");\n      document.body.removeChild(textarea);\n      return result;\n    } catch {\n      return false;\n    }\n  }\n}\n\nexport const CopyButton = React.forwardRef<HTMLButtonElement, CopyButtonProps>(\n  ({ value, className, children, successLabel = \"已复制\", fallbackLabel = \"复制失败\", ...props }, ref) => {\n    const [status, setStatus] = React.useState<\"idle\" | \"success\" | \"error\">(\"idle\");\n\n    const label = status === \"success\" ? successLabel : status === \"error\" ? fallbackLabel : children;\n\n    return (\n      <button\n        ref={ref}\n        type=\"button\"\n        className={cn(\n          \"inline-flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\",\n          className,\n        )}\n        aria-live=\"polite\"\n        onClick={async () => {\n          const ok = await copyWithFallback(value);\n          setStatus(ok ? \"success\" : \"error\");\n          setTimeout(() => setStatus(\"idle\"), 2000);\n        }}\n        {...props}\n      >\n        {label}\n      </button>\n    );\n  },\n);\n\nCopyButton.displayName = \"CopyButton\";\n\n"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "npmDependencies": [
+        "react",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "tailwind": {
+        "config": "@design-system/config/tailwind.config"
+      },
+      "copy": [
+        {
+          "id": "copy-button-install",
+          "kind": "install",
+          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json",
+          "description": "pnpm 安装（首选）",
+          "componentId": "copy-button"
+        },
+        {
+          "id": "copy-button-import",
+          "kind": "import",
+          "content": "import { copy-button } from \"@/components/ui/copy-button\";",
+          "description": "示例导入路径",
+          "componentId": "copy-button"
+        },
+        {
+          "id": "copy-button-usage",
+          "kind": "usage",
+          "content": "<Copy-button>Example</Copy-button>\n",
+          "description": "基础用法",
+          "componentId": "copy-button"
+        }
+      ],
+      "copyCommand": {
+        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json",
+        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json"
+      },
+      "checksum": "a7bbf08e194ab1ef",
+      "updatedAt": "2025-12-06T12:35:06.404Z"
+    },
+    {
+      "id": "spotlight.stories",
+      "name": "spotlight.stories",
+      "title": "Spotlight.stories",
+      "files": [
+        {
+          "path": "components/magic/spotlight.stories.tsx",
+          "content": "import type { Meta, StoryObj } from \"@storybook/react\";\n\nimport { Spotlight, type SpotlightProps } from \"./spotlight\";\n\nconst meta: Meta<SpotlightProps> = {\n  title: \"Magic/Spotlight\",\n  component: Spotlight,\n  argTypes: {\n    accent: { control: \"color\" },\n  },\n};\n\nexport default meta;\n\ntype Story = StoryObj<SpotlightProps>;\n\nexport const Default: Story = {\n  args: {\n    children: (\n      <div className=\"space-y-2\">\n        <p className=\"text-sm text-muted-foreground\">Hover anywhere inside the card.</p>\n        <p className=\"text-base font-semibold\">Dynamic spotlight follows cursor.</p>\n      </div>\n    ),\n  },\n};\n\n"
+        }
+      ],
+      "registryDependencies": [],
+      "npmDependencies": [
+        "@storybook/react"
+      ],
+      "tailwind": {
+        "config": "@design-system/config/tailwind.config"
+      },
+      "copy": [
+        {
+          "id": "spotlight.stories-install",
+          "kind": "install",
+          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.stories.json",
+          "description": "pnpm 安装（首选）",
+          "componentId": "spotlight.stories"
+        },
+        {
+          "id": "spotlight.stories-import",
+          "kind": "import",
+          "content": "import { spotlight.stories } from \"@/components/ui/spotlight.stories\";",
+          "description": "示例导入路径",
+          "componentId": "spotlight.stories"
+        },
+        {
+          "id": "spotlight.stories-usage",
+          "kind": "usage",
+          "content": "<Spotlight.stories>Example</Spotlight.stories>\n",
+          "description": "基础用法",
+          "componentId": "spotlight.stories"
+        }
+      ],
+      "copyCommand": {
+        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.stories.json"
+      },
+      "checksum": "d8527d3f4521bd2b",
+      "updatedAt": "2025-12-06T12:35:06.404Z"
+    },
+    {
+      "id": "spotlight",
+      "name": "spotlight",
+      "title": "Spotlight",
+      "files": [
+        {
+          "path": "components/magic/spotlight.tsx",
+          "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\nimport * as React from \"react\";\n\nexport interface SpotlightProps extends React.HTMLAttributes<HTMLDivElement> {\n  accent?: string;\n}\n\nexport function Spotlight({\n  accent = \"rgba(99, 102, 241, 0.15)\",\n  className,\n  children,\n  ...props\n}: SpotlightProps): React.ReactElement {\n  const [hovered, setHovered] = React.useState(false);\n\n  return (\n    <div\n      {...props}\n      onMouseEnter={() => setHovered(true)}\n      onMouseLeave={() => setHovered(false)}\n      className={cn(\n        \"relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-transform duration-300\",\n        hovered ? \"shadow-lg ring-2 ring-primary/40 scale-[1.01]\" : \"shadow-sm\",\n        className,\n      )}\n      style={{\n        backgroundImage: hovered\n          ? `radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), ${accent}, transparent 50%)`\n          : undefined,\n      }}\n      onMouseMove={(event) => {\n        const target = event.currentTarget.getBoundingClientRect();\n        const x = ((event.clientX - target.left) / target.width) * 100;\n        const y = ((event.clientY - target.top) / target.height) * 100;\n        event.currentTarget.style.setProperty(\"--x\", `${x}%`);\n        event.currentTarget.style.setProperty(\"--y\", `${y}%`);\n      }}\n    >\n      {children ?? (\n        <div className=\"space-y-2\">\n          <p className=\"text-sm font-medium text-muted-foreground\">Magic Spotlight</p>\n          <p className=\"text-base font-semibold text-foreground\">Hover to reveal the glow</p>\n        </div>\n      )}\n    </div>\n  );\n}\n\n"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "npmDependencies": [
+        "clsx",
+        "tailwind-merge",
+        "react"
+      ],
+      "tailwind": {
+        "config": "@design-system/config/tailwind.config"
+      },
+      "copy": [
+        {
+          "id": "spotlight-install",
+          "kind": "install",
+          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.json",
+          "description": "pnpm 安装（首选）",
+          "componentId": "spotlight"
+        },
+        {
+          "id": "spotlight-import",
+          "kind": "import",
+          "content": "import { spotlight } from \"@/components/ui/spotlight\";",
+          "description": "示例导入路径",
+          "componentId": "spotlight"
+        },
+        {
+          "id": "spotlight-usage",
+          "kind": "usage",
+          "content": "<Spotlight>Example</Spotlight>\n",
+          "description": "基础用法",
+          "componentId": "spotlight"
+        }
+      ],
+      "copyCommand": {
+        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.json",
+        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/spotlight.json"
+      },
+      "checksum": "ecb438a5e9f38817",
+      "updatedAt": "2025-12-06T12:35:06.404Z"
+    }
+  ],
+  "version": "2025-12-06"
+}

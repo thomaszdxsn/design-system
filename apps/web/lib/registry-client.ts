@@ -6,15 +6,13 @@
 import type { RegistryEntry, RegistryIndex } from "./registry-schema";
 
 const REGISTRY_BASE_URL =
-  process.env.NEXT_PUBLIC_REGISTRY_URL || "https://design-system.raycast-llm.workers.dev/registry";
+  process.env.REGISTRY_URL || "https://design-system.raycast-llm.workers.dev/registry";
 
 /**
  * Fetch the registry index
  */
 export async function fetchRegistryIndex(): Promise<RegistryIndex> {
-  const response = await fetch(`${REGISTRY_BASE_URL}/index.json`, {
-    next: { revalidate: 3600 }, // Cache for 1 hour
-  });
+  const response = await fetch(`${REGISTRY_BASE_URL}/index.json`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch registry index: ${response.statusText}`);
@@ -27,9 +25,7 @@ export async function fetchRegistryIndex(): Promise<RegistryIndex> {
  * Fetch a specific component from the registry
  */
 export async function fetchRegistryComponent(id: string): Promise<RegistryEntry> {
-  const response = await fetch(`${REGISTRY_BASE_URL}/${id}.json`, {
-    next: { revalidate: 3600 }, // Cache for 1 hour
-  });
+  const response = await fetch(`${REGISTRY_BASE_URL}/${id}.json`);
 
   if (!response.ok) {
     if (response.status === 404) {

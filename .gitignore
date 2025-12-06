@@ -8,6 +8,8 @@ build/
 .next/
 .open-next/
 out/
+storybook-static/
+apps/web/storybook-static/
 
 # Environment
 .env
