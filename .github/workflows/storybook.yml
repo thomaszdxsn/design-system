@@ -12,16 +12,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          bun-version: latest
+          node-version: '22'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - name: Get pnpm store directory
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
       - name: Install deps
-        run: bun install
+        run: pnpm install
       - name: Build registry
-        run: bun run build:registry --out apps/web/storybook-static/registry
+        run: pnpm run build:registry --out apps/web/storybook-static/registry
       - name: Build Storybook
-        run: bun run --filter @design-system/web storybook:build
+        run: pnpm --filter @design-system/web storybook:build
       - name: Storybook tests
-        run: bun run --filter @design-system/web storybook:test
+        run: pnpm --filter @design-system/web storybook:test
 
