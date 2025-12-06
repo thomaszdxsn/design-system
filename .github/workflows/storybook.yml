@@ -36,6 +36,11 @@ jobs:
         run: pnpm run build:registry --out apps/web/storybook-static/registry
       - name: Build Storybook
         run: pnpm --filter @design-system/web storybook:build
-      - name: Storybook tests
-        run: pnpm --filter @design-system/web storybook:test
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      - name: Run Storybook tests
+        run: |
+          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+            "npx http-server apps/web/storybook-static --port 6006 --silent" \
+            "npx wait-on tcp:6006 && npx test-storybook --url http://127.0.0.1:6006"
 
