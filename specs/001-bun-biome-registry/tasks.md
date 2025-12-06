@@ -14,14 +14,14 @@ description: "Task list for Bun/Biome Shadcn Registry"
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-**Purpose**: Workspace/runtime setup to enable Bun + Biome + Next.js development.
+**Purpose**: Workspace/runtime setup to enable pnpm + Biome + Next.js development.
 
-- [ ] T001 Update Bun workspace settings (`install.workspaces`, `install.saveTextLockfile`, hardlink cache) in `bunfig.toml`.
-- [ ] T002 Define single-entry scripts (`dev`, `build`, `check`, `check:staged`, `build:registry`, `test`, `audit`) in root `package.json`.
-- [ ] T003 [P] Add Bun runtime guard to fail fast on <1.0 and print upgrade steps in `scripts/ensure-bun.ts`.
-- [ ] T004 [P] Scaffold required workspace dirs and read-only registry placeholder (`apps/web/components/{ui,magic,blocks}` + `apps/web/public/registry/.gitkeep`).
+- [X] T001 Update pnpm workspace settings in `pnpm-workspace.yaml` and `.npmrc`.
+- [X] T002 Define single-entry scripts (`dev`, `build`, `check`, `check:staged`, `build:registry`, `test`, `audit`) in root `package.json`.
+- [X] T003 [P] Add pnpm runtime guard to fail fast on <8.0 and print upgrade steps in `scripts/ensure-pnpm.ts`.
+- [X] T004 [P] Scaffold required workspace dirs and read-only registry placeholder (`apps/web/components/{ui,magic,blocks}` + `apps/web/public/registry/.gitkeep`).
 - [ ] T004a Align script/command naming across spec/plan/tasks and package manifests (`dev`, `build:registry`, `check`, `preview`, `audit`) and document the canonical names.
-- [ ] T004b Pin package manager versions via corepack/Bun (npm/pnpm/bun ranges) and surface in CI/bootstrap scripts.
+- [ ] T004b Pin package manager versions via corepack/pnpm (npm/pnpm/bun ranges) and surface in CI/bootstrap scripts.
 
 ---
 
@@ -29,14 +29,14 @@ description: "Task list for Bun/Biome Shadcn Registry"
 
 **Purpose**: Quality gates and shared types that all stories depend on.
 
-- [ ] T005 Harden lint/format rules (no default export/`any`, 2-space + semicolon, Next App Router patterns) in `biome.json`.
-- [ ] T006 [P] Configure Husky hooks to run `bun check --staged` and block non-compliant commits/pushes in `.husky/pre-commit` and `.husky/pre-push`.
-- [ ] T007 [P] Add timing-aware `bun check` wrapper that logs durations for FR-009 in `scripts/check.ts`.
-- [ ] T007a [P] Enforce lint/format 200ms budget (SC-003) with timing guard and failure/warn thresholds in `scripts/check.ts`.
-- [ ] T008 Define registry/data-model types per `data-model.md` and `contracts/openapi.yaml` in `apps/web/lib/registry-schema.ts`.
-- [ ] T009 Add path guards/utilities to enforce component roots and prevent manual writes to `public/registry` in `apps/web/lib/registry-paths.ts`.
-- [ ] T010 Provide shared `cn()` utility for components in `packages/utils/cn.ts`.
-- [ ] T010a Add CI pipeline (e.g., GitHub Actions) running `bun check --staged`, tests, and registry build to block violations when Husky is bypassed.
+- [X] T005 Harden lint/format rules (no default export/`any`, 2-space + semicolon, Next App Router patterns) in `biome.json`.
+- [X] T006 [P] Configure Husky hooks to run `pnpm check --staged` and block non-compliant commits/pushes in `.husky/pre-commit` and `.husky/pre-push`.
+- [X] T007 [P] Add timing-aware `pnpm check` wrapper that logs durations for FR-009 in `scripts/check.ts`.
+- [X] T007a [P] Enforce lint/format 200ms budget (SC-003) with timing guard and failure/warn thresholds in `scripts/check.ts`.
+- [X] T008 Define registry/data-model types per `data-model.md` and `contracts/openapi.yaml` in `apps/web/lib/registry-schema.ts`.
+- [X] T009 Add path guards/utilities to enforce component roots and prevent manual writes to `public/registry` in `apps/web/lib/registry-paths.ts`.
+- [X] T010 Provide shared `cn()` utility for components in `packages/utils/cn.ts`.
+- [ ] T010a Add CI pipeline (e.g., GitHub Actions) running `pnpm check --staged`, tests, and registry build to block violations when Husky is bypassed.
 - [ ] T010b Document baseline hardware/OS/network assumptions (CPU/内存/磁盘/带宽/区域) for performance targets in `spec.md`/`quickstart.md`.
 - [ ] T010c Establish FR/SC → tasks/验收场景映射表并放入 `specs/001-bun-biome-registry/tasks.md` 或 `quickstart.md`.
 
@@ -50,13 +50,13 @@ description: "Task list for Bun/Biome Shadcn Registry"
 
 ### Implementation & Tests for User Story 1
 
-- [ ] T011 [P] [US1] Add install bootstrap to time `bun install` (<2s target) and log to `logs/install.json` in `scripts/bootstrap.ts`.
-- [ ] T012 [US1] Wire `postinstall` to `bun run scripts/bootstrap.ts` so a single `bun install` covers all workspaces in root `package.json`.
-- [ ] T013 [P] [US1] Ensure `bun run dev` starts Next.js App Router via `apps/web/package.json` and shared config in `apps/web/tsconfig.json`.
-- [ ] T014 [P] [US1] Create exemplar Biome-compliant component using `cn()` in `apps/web/components/ui/button.tsx`.
-- [ ] T015 [US1] Add docs preview route that renders the sample component with HMR in `apps/web/app/(docs)/components/button/page.tsx`.
-- [ ] T016 [P] [US1] Add `bun check --watch` helper for component paths and expose as `dev:check` in `scripts/dev-check.ts`.
-- [ ] T017 [P] [US1] Add dev-experience smoke test (install+dev+biome assertions) in `apps/web/__tests__/dev-experience.test.ts`.
+- [X] T011 [P] [US1] Add install bootstrap to time `pnpm install` (<2s target) and log to `logs/install.json` in `scripts/bootstrap.ts`.
+- [X] T012 [US1] Wire `postinstall` to `tsx scripts/bootstrap.ts` so a single `pnpm install` covers all workspaces in root `package.json`.
+- [X] T013 [P] [US1] Ensure `pnpm dev` starts Next.js App Router via `apps/web/package.json` and shared config in `apps/web/tsconfig.json`.
+- [X] T014 [P] [US1] Create exemplar Biome-compliant component using `cn()` in `apps/web/components/ui/button.tsx`.
+- [X] T015 [US1] Add docs preview route that renders the sample component with HMR in `apps/web/app/(docs)/components/button/page.tsx`.
+- [X] T016 [P] [US1] Add `pnpm check --watch` helper for component paths and expose as `dev:check` in `scripts/dev-check.ts`.
+- [X] T017 [P] [US1] Add dev-experience smoke test (install+dev+biome assertions) in `apps/web/__tests__/dev-experience.test.ts`.
 
 ---
 
@@ -68,15 +68,15 @@ description: "Task list for Bun/Biome Shadcn Registry"
 
 ### Tests for User Story 2
 
-- [ ] T018 [P] [US2] Add registry build tests (success, missing fields, invalid paths) in `apps/web/scripts/__tests__/build-registry.test.ts`.
+- [X] T018 [P] [US2] Add registry build tests (success, missing fields, invalid paths) in `apps/web/scripts/__tests__/build-registry.test.ts`.
 - [ ] T019 [P] [US2] Add fixture components for registry tests in `apps/web/components/magic/__fixtures__/card.tsx`.
 
 ### Implementation for User Story 2
 
-- [ ] T020 [P] [US2] Implement registry builder that scans `components/{ui,magic,blocks}` and writes `apps/web/public/registry/*.json` with registryDependencies/npmDependencies/tailwind/copyCommand/checksum in `apps/web/scripts/build-registry.ts`.
-- [ ] T021 [P] [US2] Add schema validation + fail-fast partial-write guard using `registry-schema` in `apps/web/lib/validate-registry.ts`.
-- [ ] T022 [US2] Wire `build:registry` Bun script (with duration logging and >1s warning) in root `package.json` and `apps/web/package.json`.
-- [ ] T023 [US2] Generate CDN-ready index manifest per `contracts/openapi.yaml` (`GET /index.json`) in `apps/web/public/registry/index.json`.
+- [X] T020 [P] [US2] Implement registry builder that scans `components/{ui,magic,blocks}` and writes `apps/web/public/registry/*.json` with registryDependencies/npmDependencies/tailwind/copyCommand/checksum in `scripts/build-registry.ts`.
+- [X] T021 [P] [US2] Add schema validation + fail-fast partial-write guard using `registry-schema` in `apps/web/lib/validate-registry.ts`.
+- [X] T022 [US2] Wire `build:registry` pnpm script (with duration logging and >1s warning) in root `package.json`.
+- [X] T023 [US2] Generate CDN-ready index manifest per `contracts/openapi.yaml` (`GET /index.json`) in `apps/web/public/registry/index.json`.
 - [ ] T023a Add batch/parallel build option and telemetry for large component sets; document thresholds and fallback when registry size grows.
 - [ ] T033 Define registry schema required fields + versioning/migration policy (single source in `contracts/openapi.yaml` + `registry-schema.ts`), include version/deprecation fields and samples.
 - [ ] T034 Define CDN URL versioning + caching (TTL/etag/p95/p99 SLA) and fallback/回源策略，更新 docs/quickstart 与 copy-command 显示的 URL。
@@ -95,11 +95,11 @@ description: "Task list for Bun/Biome Shadcn Registry"
 
 ### Implementation for User Story 3
 
-- [ ] T025 [P] [US3] Implement registry fetch client for `index.json` and `{id}.json` CDN endpoints in `apps/web/lib/registry-client.ts`.
-- [ ] T026 [US3] Build registry list page showing components and copy entry points in `apps/web/app/(docs)/registry/page.tsx`.
-- [ ] T027 [P] [US3] Build component detail page that renders metadata and copy buttons in `apps/web/app/(docs)/registry/[component]/page.tsx`.
-- [ ] T028 [P] [US3] Implement reusable copy-command UI for npm/pnpm/bun with mismatch hints in `apps/web/components/blocks/copy-command.tsx`.
-- [ ] T029 [US3] Align documentation of copy flows with generated commands in `specs/001-bun-biome-registry/quickstart.md`.
+- [X] T025 [P] [US3] Implement registry fetch client for `index.json` and `{id}.json` CDN endpoints in `apps/web/lib/registry-client.ts`.
+- [X] T026 [US3] Build registry list page showing components and copy entry points in `apps/web/app/(docs)/registry/page.tsx`.
+- [X] T027 [P] [US3] Build component detail page that renders metadata and copy buttons in `apps/web/app/(docs)/registry/[component]/page.tsx`.
+- [X] T028 [P] [US3] Implement reusable copy-command UI for npm/pnpm/bun with mismatch hints in `apps/web/components/blocks/copy-command.tsx`.
+- [X] T029 [US3] Align documentation of copy flows with generated commands in `specs/001-bun-biome-registry/quickstart.md`.
 - [ ] T029a [US3] Add CDN/URL validation ensuring `index.json`/`{id}.json` are reachable and match Copy Command URLs in docs/E2E.
 - [ ] T029b [US3] Add visual/style consistency checks (snapshots or stylelint rules) for sample components to ensure SC-006.
 - [ ] T035 Add telemetry events for install/lint/build durations超阈值（事件名/字段/采样率）并在 CI/monitor 中告警。
@@ -110,9 +110,9 @@ description: "Task list for Bun/Biome Shadcn Registry"
 
 **Purpose**: Hardening, docs, and end-to-end verification across stories.
 
-- [ ] T030 [P] Add Bun audit summarizer (`bun pm audit --json` -> `reports/audit.json`) in `scripts/audit.ts`.
-- [ ] T031 Capture measured install/dev/build timings and update acceptance notes in `specs/001-bun-biome-registry/quickstart.md`.
-- [ ] T032 [P] Add quickstart validator that runs install → dev → build → test pipeline and records durations in `scripts/validate-quickstart.ts`.
+- [X] T030 [P] Add pnpm audit summarizer (`pnpm audit --json` -> `reports/audit.json`) in `scripts/audit.ts`.
+- [X] T031 Capture measured install/dev/build timings and update acceptance notes in `specs/001-bun-biome-registry/quickstart.md`.
+- [X] T032 [P] Add quickstart validator that runs install → dev → build → test pipeline and records durations in `scripts/validate-quickstart.ts`.
 - [ ] T036 Define cross-platform validation matrix（macOS/Windows/CI Alpine/ARM）并在 quickstart/CI 中验证安装/预览/构建关键命令。
 - [ ] T037 Add fallback/retry and log artifact for preview/build failures（退出码、可读日志、清缓存/重试指南、CI artifact 上传）。
 - [ ] T038 Add CDN dependency/failover playbook（提供方、鉴权、区域覆盖、降级到回源或本地镜像）并在 docs 中说明。

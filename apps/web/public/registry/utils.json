@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "id": "utils",
+  "name": "Utils",
+  "type": "registry:lib",
+  "files": [
+    {
+      "path": "lib/utils.ts",
+      "content": "import { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]): string {\n  return twMerge(clsx(inputs));\n}\n"
+    }
+  ],
+  "registryDependencies": [],
+  "npmDependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "copyCommand": {
+    "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/utils.json",
+    "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/utils.json",
+    "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/utils.json"
+  }
+}

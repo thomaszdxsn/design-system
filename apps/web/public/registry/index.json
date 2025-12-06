@@ -1,0 +1,10 @@
+{
+  "components": [
+    {
+      "id": "button",
+      "name": "Button",
+      "category": "ui",
+      "version": "2025-12-06"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "design-system",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @design-system/web dev",
+    "dev:check": "tsx scripts/dev-check.ts",
+    "build": "pnpm --filter @design-system/web build",
+    "build:registry": "tsx scripts/build-registry.ts",
+    "check": "tsx scripts/check.ts",
+    "check:staged": "tsx scripts/check.ts --staged",
+    "test": "vitest",
+    "audit": "tsx scripts/audit.ts",
+    "preview": "pnpm --filter @design-system/web start",
+    "postinstall": "tsx scripts/bootstrap.ts",
+    "prepare": "husky",
+    "pages:build": "pnpm build:registry && pnpm --filter @design-system/web pages:build",
+    "pages:dev": "pnpm --filter @design-system/web pages:dev",
+    "pages:deploy": "pnpm --filter @design-system/web pages:deploy"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@opennextjs/cloudflare": "^1.14.3",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "execa": "^9.5.2",
+    "husky": "^9.1.7",
+    "tsx": "^4.19.0",
+    "vitest": "^2.1.0",
+    "wrangler": "^4.53.0"
+  },
+  "dependencies": {
+    "next": "^14.2.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

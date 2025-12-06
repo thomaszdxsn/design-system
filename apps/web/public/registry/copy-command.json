@@ -1,0 +1,24 @@
+{
+  "id": "copy-command",
+  "name": "Copy Command",
+  "files": [
+    {
+      "path": "components/blocks/copy-command.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport { cn } from \"@design-system/utils/cn\";\n\nexport interface CopyCommandProps {\n  npm: string;\n  pnpm: string;\n  bun: string;\n  className?: string;\n}\n\ntype PackageManager = \"npm\" | \"pnpm\" | \"bun\";\n\nexport function CopyCommand({ npm, pnpm, bun, className }: CopyCommandProps): React.ReactElement {\n  const [selectedPM, setSelectedPM] = React.useState<PackageManager>(\"pnpm\");\n  const [copied, setCopied] = React.useState(false);\n\n  const commands = { npm, pnpm, bun };\n  const currentCommand = commands[selectedPM];\n\n  const handleCopy = async (): Promise<void> => {\n    try {\n      await navigator.clipboard.writeText(currentCommand);\n      setCopied(true);\n      setTimeout(() => setCopied(false), 2000);\n    } catch {\n      // Silently fail if clipboard is not available\n    }\n  };\n\n  return (\n    <div className={cn(\"space-y-3\", className)}>\n      <div className=\"flex gap-2\">\n        {([\"npm\", \"pnpm\", \"bun\"] as const).map((pm) => (\n          <button\n            key={pm}\n            type=\"button\"\n            onClick={() => setSelectedPM(pm)}\n            className={cn(\n              \"px-3 py-1 text-sm font-medium rounded-md transition-colors\",\n              selectedPM === pm\n                ? \"bg-primary text-primary-foreground\"\n                : \"bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n            )}\n          >\n            {pm}\n          </button>\n        ))}\n      </div>\n\n      <div className=\"relative\">\n        <pre className=\"bg-muted p-4 rounded-md overflow-x-auto\">\n          <code className=\"text-sm\">{currentCommand}</code>\n        </pre>\n        <Button\n          size=\"sm\"\n          variant=\"outline\"\n          onClick={handleCopy}\n          className=\"absolute top-2 right-2\"\n        >\n          {copied ? \"Copied!\" : \"Copy\"}\n        </Button>\n      </div>\n\n      {selectedPM !== \"pnpm\" && (\n        <p className=\"text-sm text-muted-foreground\">\n          💡 Tip: This project uses pnpm. Consider using pnpm for consistency.\n        </p>\n      )}\n    </div>\n  );\n}\n"
+    }
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "npmDependencies": [
+    "react",
+    "@design-system/utils"
+  ],
+  "copyCommand": {
+    "npm": "npx shadcn@latest add https://registry.example.com/copy-command.json",
+    "pnpm": "pnpm dlx shadcn@latest add https://registry.example.com/copy-command.json",
+    "bun": "bunx shadcn@latest add https://registry.example.com/copy-command.json"
+  },
+  "checksum": "b1f43a1ba8a854b7",
+  "updatedAt": "2025-12-06T06:37:08.911Z"
+}
