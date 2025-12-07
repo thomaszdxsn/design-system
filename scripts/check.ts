@@ -17,10 +17,10 @@ async function check(): Promise<void> {
     // Run Biome check
     const args = isStaged ? ["check", "--write", "--staged", "."] : ["check", "--write", "."];
 
-    const result = await execa("biome", args, { stdio: "inherit", reject: false });
+    const result = await execa("biome", args, { reject: false, all: true });
 
     // Exit gracefully if no files to process (e.g., when only deleting files)
-    if (result.exitCode === 1 && result.stderr?.includes("No files were processed")) {
+    if (result.exitCode === 1 && result.all?.includes("No files were processed")) {
       // biome-ignore lint/suspicious/noConsoleLog: CLI output is intentional
       console.log("✓ No files to check (skipped)");
       return;
@@ -28,6 +28,7 @@ async function check(): Promise<void> {
 
     // Re-throw if it's a real error
     if (result.exitCode !== 0) {
+      console.error(result.all);
       throw new Error(`Biome check failed with exit code ${result.exitCode}`);
     }
 
