@@ -2,10 +2,7 @@
   "name": "design-system",
   "version": "0.1.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "dev": "pnpm --filter @design-system/web storybook",
     "dev:storybook:measure": "tsx scripts/measure-storybook-dev.ts",
@@ -28,7 +25,7 @@
     "@types/node": "^20.14.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "execa": "^9.5.2",
+    "execa": "^8.0.1",
     "husky": "^9.1.7",
     "tsx": "^4.19.0",
     "vitest": "^2.1.0"
