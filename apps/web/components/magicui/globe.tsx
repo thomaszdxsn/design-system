@@ -9,7 +9,7 @@ const MOVEMENT_DAMPING = 1400;
 const GLOBE_CONFIG: COBEOptions = {
   width: 800,
   height: 800,
-  onRender: () => {},
+  onRender: () => { },
   devicePixelRatio: 2,
   phi: 0,
   theta: 0.3,
@@ -69,6 +69,7 @@ export function Globe({
     }
   };
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: MagicUI component uses external phi/width vars intentionally for animation state
   useEffect(() => {
     const onResize = () => {
       if (canvasRef.current) {
@@ -79,6 +80,7 @@ export function Globe({
     window.addEventListener("resize", onResize);
     onResize();
 
+    // biome-ignore lint/style/noNonNullAssertion: canvas ref is guaranteed to exist at this point
     const globe = createGlobe(canvasRef.current!, {
       ...config,
       width: width * 2,
@@ -91,7 +93,11 @@ export function Globe({
       },
     });
 
-    setTimeout(() => (canvasRef.current?.style.opacity = "1"), 0);
+    setTimeout(() => {
+      if (canvasRef.current) {
+        canvasRef.current.style.opacity = "1";
+      }
+    }, 0);
     return () => {
       globe.destroy();
       window.removeEventListener("resize", onResize);
