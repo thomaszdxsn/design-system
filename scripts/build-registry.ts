@@ -40,6 +40,10 @@ async function scanComponentDirectory(root: ComponentRoot): Promise<ComponentMet
     const files = await readdir(rootPath, { recursive: false });
 
     for (const file of files) {
+      // Skip story files - they are not installable components
+      if (file.includes(".stories.")) {
+        continue;
+      }
       if (file.endsWith(".tsx") || file.endsWith(".ts")) {
         const filePath = join(rootPath, file);
         const content = await readFile(filePath, "utf-8");
@@ -78,9 +82,9 @@ function extractDependencies(content: string): {
 
   // Extract npm dependencies from imports
   const importRegex = /import\s+.*?\s+from\s+["']([^"']+)["']/g;
-  let match: RegExpExecArray | null;
+  let match: RegExpExecArray | null = importRegex.exec(content);
 
-  while ((match = importRegex.exec(content)) !== null) {
+  while (match !== null) {
     const importPath = match[1];
 
     // Handle @/lib/utils - this requires clsx and tailwind-merge
@@ -115,6 +119,7 @@ function extractDependencies(content: string): {
     if (packageName) {
       npmDeps.add(packageName);
     }
+    match = importRegex.exec(content);
   }
 
   return {
@@ -128,14 +133,13 @@ function extractDependencies(content: string): {
  */
 function generateCopyCommand(
   id: string,
-  category: string,
+  _category: string,
 ): {
   npm: string;
   pnpm: string;
   bun: string;
 } {
-  const baseUrl =
-    process.env.REGISTRY_URL || "https://design-system-e2x.pages.dev/registry";
+  const baseUrl = process.env.REGISTRY_URL || "https://design-system-e2x.pages.dev/registry";
   const registryPath = `${baseUrl}/${id}.json`;
 
   return {
@@ -217,8 +221,8 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
 async function buildRegistry(): Promise<void> {
   const startTime = performance.now();
 
-  console.log("🏗️  Building registry...");
-  console.log("");
+  console.info("🏗️  Building registry...");
+  console.info("");
 
   // Scan component directories (exclude blocks - internal components)
   const allComponents: ComponentMetadata[] = [];
@@ -227,12 +231,12 @@ async function buildRegistry(): Promise<void> {
   for (const root of PUBLISHABLE_ROOTS) {
     const components = await scanComponentDirectory(root);
     allComponents.push(...components);
-    console.log(`✓ Scanned ${root}: ${components.length} components`);
+    console.info(`✓ Scanned ${root}: ${components.length} components`);
   }
 
-  console.log("");
-  console.log(`📦 Found ${allComponents.length} total components`);
-  console.log("");
+  console.info("");
+  console.info(`📦 Found ${allComponents.length} total components`);
+  console.info("");
 
   // Build registry entries
   const entries: RegistryEntry[] = [];
@@ -259,7 +263,7 @@ async function buildRegistry(): Promise<void> {
       version: REGISTRY_VERSION,
     });
 
-    console.log(`✓ Built ${component.id}`);
+    console.info(`✓ Built ${component.id}`);
   }
 
   // Determine output dir
@@ -287,10 +291,10 @@ async function buildRegistry(): Promise<void> {
 
   const duration = performance.now() - startTime;
 
-  console.log("");
-  console.log(`✅ Registry built successfully in ${Math.round(duration)}ms`);
-  console.log(`   Output: ${outputDir}`);
-  console.log(`   Components: ${entries.length}`);
+  console.info("");
+  console.info(`✅ Registry built successfully in ${Math.round(duration)}ms`);
+  console.info(`   Output: ${outputDir}`);
+  console.info(`   Components: ${entries.length}`);
 
   if (duration > BUILD_BUDGET_MS) {
     console.warn("");

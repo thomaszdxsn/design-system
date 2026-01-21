@@ -1,20 +1,8 @@
 {
   "components": [
     {
-      "id": "button.stories",
-      "name": "button.stories",
-      "category": "ui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "button",
       "name": "button",
-      "category": "ui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "copy-button.stories",
-      "name": "copy-button.stories",
       "category": "ui",
       "version": "2025-12-06"
     },
@@ -25,32 +13,14 @@
       "version": "2025-12-06"
     },
     {
-      "id": "file-tree",
-      "name": "file-tree",
-      "category": "ui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "scroll-area",
       "name": "scroll-area",
       "category": "ui",
       "version": "2025-12-06"
     },
     {
-      "id": "animated-beam.stories",
-      "name": "animated-beam.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "animated-beam",
       "name": "animated-beam",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "animated-circular-progress-bar.stories",
-      "name": "animated-circular-progress-bar.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -61,20 +31,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "animated-gradient-text.stories",
-      "name": "animated-gradient-text.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "animated-gradient-text",
       "name": "animated-gradient-text",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "animated-list.stories",
-      "name": "animated-list.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -85,20 +43,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "animated-shiny-text.stories",
-      "name": "animated-shiny-text.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "animated-shiny-text",
       "name": "animated-shiny-text",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "avatar-circles.stories",
-      "name": "avatar-circles.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -109,20 +55,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "bento-grid.stories",
-      "name": "bento-grid.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "bento-grid",
       "name": "bento-grid",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "blur-fade.stories",
-      "name": "blur-fade.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -133,20 +67,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "border-beam.stories",
-      "name": "border-beam.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "border-beam",
       "name": "border-beam",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "code-comparison.stories",
-      "name": "code-comparison.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -157,20 +79,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "confetti.stories",
-      "name": "confetti.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "confetti",
       "name": "confetti",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "cool-mode.stories",
-      "name": "cool-mode.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -181,20 +91,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "dock.stories",
-      "name": "dock.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "dock",
       "name": "dock",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "dot-pattern.stories",
-      "name": "dot-pattern.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -205,20 +103,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "file-tree.stories",
-      "name": "file-tree.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "file-tree",
       "name": "file-tree",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "globe.stories",
-      "name": "globe.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -229,20 +115,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "grid-pattern.stories",
-      "name": "grid-pattern.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "grid-pattern",
       "name": "grid-pattern",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "hero-video-dialog.stories",
-      "name": "hero-video-dialog.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -253,20 +127,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "hyper-text.stories",
-      "name": "hyper-text.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "hyper-text",
       "name": "hyper-text",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "icon-cloud.stories",
-      "name": "icon-cloud.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -277,20 +139,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "interactive-hover-button.stories",
-      "name": "interactive-hover-button.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "interactive-hover-button",
       "name": "interactive-hover-button",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "lens.stories",
-      "name": "lens.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -301,20 +151,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "magic-card.stories",
-      "name": "magic-card.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "magic-card",
       "name": "magic-card",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "marquee.stories",
-      "name": "marquee.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -325,20 +163,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "meteors.stories",
-      "name": "meteors.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "meteors",
       "name": "meteors",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "number-ticker.stories",
-      "name": "number-ticker.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -349,20 +175,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "orbiting-circles.stories",
-      "name": "orbiting-circles.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "orbiting-circles",
       "name": "orbiting-circles",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "particles.stories",
-      "name": "particles.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -373,20 +187,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "pointer.stories",
-      "name": "pointer.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "pointer",
       "name": "pointer",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "pulsating-button.stories",
-      "name": "pulsating-button.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -397,20 +199,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "rainbow-button.stories",
-      "name": "rainbow-button.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "rainbow-button",
       "name": "rainbow-button",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "ripple-button.stories",
-      "name": "ripple-button.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -421,20 +211,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "ripple.stories",
-      "name": "ripple.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "ripple",
       "name": "ripple",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "scroll-progress.stories",
-      "name": "scroll-progress.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -445,20 +223,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "shimmer-button.stories",
-      "name": "shimmer-button.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "shimmer-button",
       "name": "shimmer-button",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "shine-border.stories",
-      "name": "shine-border.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -469,20 +235,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "sparkles-text.stories",
-      "name": "sparkles-text.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "sparkles-text",
       "name": "sparkles-text",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "terminal.stories",
-      "name": "terminal.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -493,20 +247,8 @@
       "version": "2025-12-06"
     },
     {
-      "id": "text-animate.stories",
-      "name": "text-animate.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "text-animate",
       "name": "text-animate",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "text-reveal.stories",
-      "name": "text-reveal.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
@@ -517,32 +259,14 @@
       "version": "2025-12-06"
     },
     {
-      "id": "tweet-card.stories",
-      "name": "tweet-card.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "tweet-card",
       "name": "tweet-card",
       "category": "magicui",
       "version": "2025-12-06"
     },
     {
-      "id": "typing-animation.stories",
-      "name": "typing-animation.stories",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
       "id": "typing-animation",
       "name": "typing-animation",
-      "category": "magicui",
-      "version": "2025-12-06"
-    },
-    {
-      "id": "word-rotate.stories",
-      "name": "word-rotate.stories",
       "category": "magicui",
       "version": "2025-12-06"
     },
