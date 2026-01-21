@@ -3,16 +3,16 @@
  * Scans components and generates registry JSON files
  */
 
-import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
-import { join, relative, basename, resolve } from "node:path";
 import { createHash } from "node:crypto";
-import { getComponentRoot, COMPONENT_ROOTS, type ComponentRoot } from "../apps/web/lib/registry-paths";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { basename, join, resolve } from "node:path";
+import { type ComponentRoot, getComponentRoot } from "../apps/web/lib/registry-paths";
 import type {
+  ComponentCategory,
+  CopyCommandEntry,
   RegistryEntry,
   RegistryIndex,
   RegistrySummary,
-  ComponentCategory,
-  CopyCommandEntry,
 } from "../apps/web/lib/registry-schema";
 import { validateRegistryEntry } from "../apps/web/lib/validate-registry";
 
@@ -32,9 +32,7 @@ interface ComponentMetadata {
 /**
  * Scan a component directory and extract metadata
  */
-async function scanComponentDirectory(
-  root: ComponentRoot,
-): Promise<ComponentMetadata[]> {
+async function scanComponentDirectory(root: ComponentRoot): Promise<ComponentMetadata[]> {
   const rootPath = getComponentRoot(root);
   const components: ComponentMetadata[] = [];
 
@@ -128,12 +126,16 @@ function extractDependencies(content: string): {
 /**
  * Generate copy command for a component
  */
-function generateCopyCommand(id: string, category: string): {
+function generateCopyCommand(
+  id: string,
+  category: string,
+): {
   npm: string;
   pnpm: string;
   bun: string;
 } {
-  const baseUrl = process.env.REGISTRY_URL || "https://design-system.raycast-llm.workers.dev/registry";
+  const baseUrl =
+    process.env.REGISTRY_URL || "https://design-system.raycast-llm.workers.dev/registry";
   const registryPath = `${baseUrl}/${id}.json`;
 
   return {
@@ -143,7 +145,10 @@ function generateCopyCommand(id: string, category: string): {
   };
 }
 
-function buildCopyEntries(id: string, commands: { npm: string; pnpm: string; bun: string }): CopyCommandEntry[] {
+function buildCopyEntries(
+  id: string,
+  commands: { npm: string; pnpm: string; bun: string },
+): CopyCommandEntry[] {
   return [
     {
       id: `${id}-install`,
@@ -178,7 +183,7 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
 
   // If the component uses @/lib/utils, add "utils" as a registry dependency
   const registryDeps = [...deps.registry];
-  if (component.content.includes('@/lib/utils')) {
+  if (component.content.includes("@/lib/utils")) {
     registryDeps.push("utils");
   }
 
@@ -217,7 +222,7 @@ async function buildRegistry(): Promise<void> {
 
   // Scan component directories (exclude blocks - internal components)
   const allComponents: ComponentMetadata[] = [];
-  const PUBLISHABLE_ROOTS: ComponentRoot[] = ["ui", "magic"];
+  const PUBLISHABLE_ROOTS: ComponentRoot[] = ["ui", "magic", "magicui"];
 
   for (const root of PUBLISHABLE_ROOTS) {
     const components = await scanComponentDirectory(root);
@@ -259,7 +264,10 @@ async function buildRegistry(): Promise<void> {
 
   // Determine output dir
   const argvOut = process.argv.find((arg) => arg.startsWith("--out="))?.split("=")[1];
-  const outputDir = resolve(process.cwd(), argvOut || (process.env.NODE_ENV === "production" ? DEFAULT_BUILD_OUT : DEFAULT_DEV_OUT));
+  const outputDir = resolve(
+    process.cwd(),
+    argvOut || (process.env.NODE_ENV === "production" ? DEFAULT_BUILD_OUT : DEFAULT_DEV_OUT),
+  );
 
   await mkdir(outputDir, { recursive: true });
 

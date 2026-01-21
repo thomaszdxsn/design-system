@@ -1,0 +1,379 @@
+# 实现计划: Magic UI 组件集成
+
+## 概述
+
+通过 shadcn CLI 将 Magic UI 组件库集成到 design-system 项目中。所有组件代码必须通过 CLI 命令引入，禁止手动编写。集成完成后验证 Storybook 正常运行，最后删除临时配置文件。
+
+## 任务
+
+- [x] 1. 初始化 shadcn CLI 配置
+  - [x] 1.1 在 apps/web 目录下创建 components.json 配置文件
+    - 配置 @magicui registry 指向 https://magicui.design/r/{name}.json
+    - 设置组件输出路径为 components/magicui
+    - 配置 TypeScript 路径别名与项目一致
+    - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5_
+  - [x] 1.2 更新 registry-paths.ts 添加 magicui 组件根目录
+    - 在 COMPONENT_ROOTS 数组中添加 "magicui"
+    - _Requirements: 4.4_
+
+- [x] 2. 安装文字动画组件并创建 Stories
+  - [x] 2.1 安装 text-reveal 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/text-reveal`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.2 为 text-reveal 创建 story 文件
+    - 创建 `components/magicui/text-reveal.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.3 安装 typing-animation 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/typing-animation`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.4 为 typing-animation 创建 story 文件
+    - 创建 `components/magicui/typing-animation.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.5 安装 word-rotate 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/word-rotate`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.6 为 word-rotate 创建 story 文件
+    - 创建 `components/magicui/word-rotate.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.7 安装 hyper-text 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/hyper-text`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.8 为 hyper-text 创建 story 文件
+    - 创建 `components/magicui/hyper-text.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.9 安装 text-animate 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/text-animate`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.10 为 text-animate 创建 story 文件
+    - 创建 `components/magicui/text-animate.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.11 安装 number-ticker 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/number-ticker`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.12 为 number-ticker 创建 story 文件
+    - 创建 `components/magicui/number-ticker.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.13 安装 animated-shiny-text 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/animated-shiny-text`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.14 为 animated-shiny-text 创建 story 文件
+    - 创建 `components/magicui/animated-shiny-text.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.15 安装 animated-gradient-text 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/animated-gradient-text`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.16 为 animated-gradient-text 创建 story 文件
+    - 创建 `components/magicui/animated-gradient-text.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 2.17 安装 blur-fade 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/blur-fade`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 2.18 为 blur-fade 创建 story 文件
+    - 创建 `components/magicui/blur-fade.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+
+- [x] 3. 安装按钮组件并创建 Stories
+  - [x] 3.1 安装 shimmer-button 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/shimmer-button`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 3.2 为 shimmer-button 创建 story 文件
+    - 创建 `components/magicui/shimmer-button.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 3.3 安装 pulsating-button 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/pulsating-button`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 3.4 为 pulsating-button 创建 story 文件
+    - 创建 `components/magicui/pulsating-button.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 3.5 安装 rainbow-button 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/rainbow-button`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 3.6 为 rainbow-button 创建 story 文件
+    - 创建 `components/magicui/rainbow-button.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 3.7 安装 ripple-button 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/ripple-button`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 3.8 为 ripple-button 创建 story 文件
+    - 创建 `components/magicui/ripple-button.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 3.9 安装 interactive-hover-button 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/interactive-hover-button`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 3.10 为 interactive-hover-button 创建 story 文件
+    - 创建 `components/magicui/interactive-hover-button.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+
+- [x] 4. 安装背景效果组件并创建 Stories
+  - [x] 4.1 安装 dot-pattern 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/dot-pattern`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 4.2 为 dot-pattern 创建 story 文件
+    - 创建 `components/magicui/dot-pattern.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 4.3 安装 grid-pattern 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/grid-pattern`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 4.4 为 grid-pattern 创建 story 文件
+    - 创建 `components/magicui/grid-pattern.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 4.5 安装 particles 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/particles`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 4.6 为 particles 创建 story 文件
+    - 创建 `components/magicui/particles.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 4.7 安装 ripple 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/ripple`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 4.8 为 ripple 创建 story 文件
+    - 创建 `components/magicui/ripple.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 4.9 安装 meteors 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/meteors`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 4.10 为 meteors 创建 story 文件
+    - 创建 `components/magicui/meteors.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+
+- [x] 5. 安装布局组件并创建 Stories
+  - [x] 5.1 安装 bento-grid 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/bento-grid`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 5.2 为 bento-grid 创建 story 文件
+    - 创建 `components/magicui/bento-grid.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 5.3 安装 marquee 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/marquee`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 5.4 为 marquee 创建 story 文件
+    - 创建 `components/magicui/marquee.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 5.5 安装 dock 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/dock`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 5.6 为 dock 创建 story 文件
+    - 创建 `components/magicui/dock.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 5.7 安装 terminal 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/terminal`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 5.8 为 terminal 创建 story 文件
+    - 创建 `components/magicui/terminal.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+
+- [x] 6. 安装特效组件并创建 Stories
+  - [x] 6.1 安装 border-beam 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/border-beam`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.2 为 border-beam 创建 story 文件
+    - 创建 `components/magicui/border-beam.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 6.3 安装 magic-card 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/magic-card`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.4 为 magic-card 创建 story 文件
+    - 创建 `components/magicui/magic-card.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 6.5 安装 shine-border 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/shine-border`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.6 为 shine-border 创建 story 文件
+    - 创建 `components/magicui/shine-border.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 6.7 安装 animated-beam 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/animated-beam`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.8 为 animated-beam 创建 story 文件
+    - 创建 `components/magicui/animated-beam.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 6.9 安装 animated-list 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/animated-list`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.10 为 animated-list 创建 story 文件
+    - 创建 `components/magicui/animated-list.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 6.11 安装 confetti 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/confetti`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.12 为 confetti 创建 story 文件
+    - 创建 `components/magicui/confetti.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 6.13 安装 cool-mode 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/cool-mode`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.14 为 cool-mode 创建 story 文件
+    - 创建 `components/magicui/cool-mode.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 6.15 安装 sparkles-text 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/sparkles-text`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 6.16 为 sparkles-text 创建 story 文件
+    - 创建 `components/magicui/sparkles-text.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+
+- [x] 7. 安装社交/媒体组件并创建 Stories
+  - [x] 7.1 安装 globe 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/globe`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3, 6.2_
+  - [x] 7.2 为 globe 创建 story 文件
+    - 创建 `components/magicui/globe.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 7.3 安装 tweet-card 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/tweet-card`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 7.4 为 tweet-card 创建 story 文件
+    - 创建 `components/magicui/tweet-card.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 7.5 安装 hero-video-dialog 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/hero-video-dialog`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 7.6 为 hero-video-dialog 创建 story 文件
+    - 创建 `components/magicui/hero-video-dialog.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 7.7 安装 avatar-circles 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/avatar-circles`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 7.8 为 avatar-circles 创建 story 文件
+    - 创建 `components/magicui/avatar-circles.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 7.9 安装 orbiting-circles 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/orbiting-circles`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 7.10 为 orbiting-circles 创建 story 文件
+    - 创建 `components/magicui/orbiting-circles.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 7.11 安装 icon-cloud 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/icon-cloud`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 7.12 为 icon-cloud 创建 story 文件
+    - 创建 `components/magicui/icon-cloud.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+
+- [x] 8. 安装工具组件并创建 Stories
+  - [x] 8.1 安装 file-tree 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/file-tree`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 8.2 为 file-tree 创建 story 文件
+    - 创建 `components/magicui/file-tree.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 8.3 安装 code-comparison 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/code-comparison`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 8.4 为 code-comparison 创建 story 文件
+    - 创建 `components/magicui/code-comparison.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 8.5 安装 script-copy-btn 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/script-copy-btn`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 8.6 为 script-copy-btn 创建 story 文件
+    - 创建 `components/magicui/script-copy-btn.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 8.7 安装 scroll-progress 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/scroll-progress`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 8.8 为 scroll-progress 创建 story 文件
+    - 创建 `components/magicui/scroll-progress.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 8.9 安装 animated-circular-progress-bar 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/animated-circular-progress-bar`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 8.10 为 animated-circular-progress-bar 创建 story 文件
+    - 创建 `components/magicui/animated-circular-progress-bar.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 8.11 安装 lens 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/lens`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 8.12 为 lens 创建 story 文件
+    - 创建 `components/magicui/lens.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+  - [x] 8.13 安装 pointer 组件
+    - 执行 `pnpm dlx shadcn@latest add @magicui/pointer`
+    - 移动组件到 `components/magicui/` 目录
+    - _Requirements: 2.1, 2.2, 2.3_
+  - [x] 8.14 为 pointer 创建 story 文件
+    - 创建 `components/magicui/pointer.stories.tsx`
+    - _Requirements: 5.1, 5.2_
+
+- [x] 9. Checkpoint - 验证组件安装
+  - 确保所有组件文件已安装到 apps/web/components/magicui 目录
+  - 确保 framer-motion 依赖已安装
+  - 如有问题请询问用户
+
+- [x] 10. Checkpoint - 验证 Storybook
+  - 运行 `pnpm run storybook` 启动 Storybook
+  - 验证所有 Magic UI 组件页面可正常访问
+  - 验证无控制台错误或警告
+  - 如有问题请询问用户
+  - _Requirements: 5.4, 5.5_
+
+- [x] 11. 验证 Registry 构建
+  - [x] 11.1 运行 build:registry 验证构建成功
+    - 执行 `pnpm run build:registry`
+    - 验证生成的 JSON 文件包含 Magic UI 组件
+    - _Requirements: 4.1, 4.2, 4.3_
+
+- [x] 12. 清理临时配置
+  - [x] 12.1 删除 apps/web/components.json 文件
+    - _Requirements: 7.1_
+  - [x] 12.2 验证删除后系统正常运行
+    - 运行 Storybook 验证组件仍可正常工作
+    - 运行 build:registry 验证构建仍成功
+    - _Requirements: 7.2, 7.3_
+
+- [x] 13. Final Checkpoint - 最终验证
+  - 确保所有 Storybook 页面无报错
+  - 确保 Registry 构建成功
+  - 确保 components.json 已删除
+  - 如有问题请询问用户
+
+## 注意事项
+
+- 所有组件必须通过 CLI 命令安装，禁止手动编写代码
+- 每个组件安装后需验证文件已正确放置在 components/magicui 目录
+- Globe 组件依赖 cobe 库，可能需要额外配置
+- 部分组件可能需要 framer-motion 依赖
+- 如遇到安装失败，检查网络连接和组件名称拼写

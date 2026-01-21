@@ -5,7 +5,7 @@
 
 import { join, resolve } from "node:path";
 
-const COMPONENT_ROOTS = ["ui", "magic", "blocks"] as const;
+const COMPONENT_ROOTS = ["ui", "magic", "magicui", "blocks"] as const;
 const REGISTRY_OUTPUT_DIR = "apps/web/public/registry";
 
 export type ComponentRoot = (typeof COMPONENT_ROOTS)[number];
