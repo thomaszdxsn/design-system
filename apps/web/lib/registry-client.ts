@@ -12,7 +12,7 @@ const REGISTRY_BASE_URL =
  * Fetch the registry index
  */
 export async function fetchRegistryIndex(): Promise<RegistryIndex> {
-  const response = await fetch(`${REGISTRY_BASE_URL}/index.json`);
+  const response = await fetch(`${REGISTRY_BASE_URL}/registry.json`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch registry index: ${response.statusText}`);
@@ -45,8 +45,8 @@ export async function getLocalRegistryIndex(): Promise<RegistryIndex> {
   const { readFile } = await import("node:fs/promises");
   const { join } = await import("node:path");
 
-  const indexPath = join(process.cwd(), "public/registry/index.json");
-  const content = await readFile(indexPath, "utf-8");
+  const registryPath = join(process.cwd(), "public/registry/registry.json");
+  const content = await readFile(registryPath, "utf-8");
 
   return JSON.parse(content);
 }

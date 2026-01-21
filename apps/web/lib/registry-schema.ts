@@ -70,7 +70,7 @@ export interface RegistryEntry {
 }
 
 /**
- * Index item (summary for index.json items array)
+ * Index item (summary for registry.json items array)
  * Contains only metadata, not full file contents
  */
 export interface RegistryIndexItem {
@@ -82,7 +82,7 @@ export interface RegistryIndexItem {
 }
 
 /**
- * Root index.json structure for shadcn CLI v2+
+ * Root registry.json structure for shadcn CLI v2+
  */
 export interface RegistryIndex {
   $schema: string;

@@ -279,9 +279,9 @@ async function buildRegistry(): Promise<void> {
     process.exit(1);
   }
 
-  // Write index file
-  const indexPath = join(outputDir, "index.json");
-  await writeFile(indexPath, JSON.stringify(index, null, 2));
+  // Write registry.json (shadcn CLI uses this filename for registry index)
+  const registryPath = join(outputDir, "registry.json");
+  await writeFile(registryPath, JSON.stringify(index, null, 2));
 
   const duration = performance.now() - startTime;
 
