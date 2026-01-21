@@ -219,8 +219,8 @@ export const WithCollapseButton: Story = {
             )}
           </Folder>
         ))}
+        <CollapseButton elements={projectStructure}>Toggle All</CollapseButton>
       </Tree>
-      <CollapseButton elements={projectStructure}>Toggle All</CollapseButton>
     </div>
   ),
 };
