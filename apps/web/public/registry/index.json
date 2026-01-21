@@ -31,6 +31,12 @@
       "version": "2025-12-06"
     },
     {
+      "id": "scroll-area",
+      "name": "scroll-area",
+      "category": "ui",
+      "version": "2025-12-06"
+    },
+    {
       "id": "animated-beam.stories",
       "name": "animated-beam.stories",
       "category": "magicui",

@@ -135,7 +135,7 @@ function generateCopyCommand(
   bun: string;
 } {
   const baseUrl =
-    process.env.REGISTRY_URL || "https://design-system.raycast-llm.workers.dev/registry";
+    process.env.REGISTRY_URL || "https://design-system-e2x.pages.dev/registry";
   const registryPath = `${baseUrl}/${id}.json`;
 
   return {

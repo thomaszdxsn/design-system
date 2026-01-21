@@ -6,7 +6,7 @@
 import type { RegistryEntry, RegistryIndex } from "./registry-schema";
 
 const REGISTRY_BASE_URL =
-  process.env.REGISTRY_URL || "https://design-system.raycast-llm.workers.dev/registry";
+  process.env.REGISTRY_URL || "https://design-system-e2x.pages.dev/registry";
 
 /**
  * Fetch the registry index

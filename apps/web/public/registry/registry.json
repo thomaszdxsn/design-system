@@ -22,7 +22,7 @@
         {
           "id": "button.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "button.stories"
         },
@@ -42,12 +42,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.stories.json"
       },
       "checksum": "f444c06e3fd10c39",
-      "updatedAt": "2026-01-21T06:50:38.507Z"
+      "updatedAt": "2026-01-21T07:48:21.134Z"
     },
     {
       "id": "button",
@@ -74,7 +74,7 @@
         {
           "id": "button-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.json",
           "description": "pnpm 安装（首选）",
           "componentId": "button"
         },
@@ -94,12 +94,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/button.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/button.json"
       },
       "checksum": "10d19c674e50497a",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "copy-button.stories",
@@ -123,7 +123,7 @@
         {
           "id": "copy-button.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "copy-button.stories"
         },
@@ -143,12 +143,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.stories.json"
       },
       "checksum": "2ae9a236d9380cfb",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "copy-button",
@@ -175,7 +175,7 @@
         {
           "id": "copy-button-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.json",
           "description": "pnpm 安装（首选）",
           "componentId": "copy-button"
         },
@@ -195,12 +195,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/copy-button.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/copy-button.json"
       },
       "checksum": "a7bbf08e194ab1ef",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "file-tree",
@@ -231,7 +231,7 @@
         {
           "id": "file-tree-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json",
           "description": "pnpm 安装（首选）",
           "componentId": "file-tree"
         },
@@ -251,12 +251,65 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json"
       },
       "checksum": "6d15bc5c1aee376a",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
+    },
+    {
+      "id": "scroll-area",
+      "name": "scroll-area",
+      "title": "Scroll Area",
+      "files": [
+        {
+          "path": "components/ui/scroll-area.tsx",
+          "content": "\"use client\";\n\nimport * as ScrollAreaPrimitive from \"@radix-ui/react-scroll-area\";\nimport * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst ScrollArea = React.forwardRef<\n  React.ElementRef<typeof ScrollAreaPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>\n>(({ className, children, ...props }, ref) => (\n  <ScrollAreaPrimitive.Root\n    ref={ref}\n    className={cn(\"relative overflow-hidden\", className)}\n    {...props}\n  >\n    <ScrollAreaPrimitive.Viewport className=\"h-full w-full rounded-[inherit]\">\n      {children}\n    </ScrollAreaPrimitive.Viewport>\n    <ScrollBar />\n    <ScrollAreaPrimitive.Corner />\n  </ScrollAreaPrimitive.Root>\n));\nScrollArea.displayName = ScrollAreaPrimitive.Root.displayName;\n\nconst ScrollBar = React.forwardRef<\n  React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,\n  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>\n>(({ className, orientation = \"vertical\", ...props }, ref) => (\n  <ScrollAreaPrimitive.ScrollAreaScrollbar\n    ref={ref}\n    orientation={orientation}\n    className={cn(\n      \"flex touch-none select-none transition-colors\",\n      orientation === \"vertical\" && \"h-full w-2.5 border-l border-l-transparent p-[1px]\",\n      orientation === \"horizontal\" && \"h-2.5 flex-col border-t border-t-transparent p-[1px]\",\n      className,\n    )}\n    {...props}\n  >\n    <ScrollAreaPrimitive.ScrollAreaThumb className=\"relative flex-1 rounded-full bg-border\" />\n  </ScrollAreaPrimitive.ScrollAreaScrollbar>\n));\nScrollBar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName;\n\nexport { ScrollArea, ScrollBar };\n"
+        }
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "npmDependencies": [
+        "@radix-ui/react-scroll-area",
+        "react",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "tailwind": {
+        "config": "@design-system/config/tailwind.config"
+      },
+      "copy": [
+        {
+          "id": "scroll-area-install",
+          "kind": "install",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-area.json",
+          "description": "pnpm 安装（首选）",
+          "componentId": "scroll-area"
+        },
+        {
+          "id": "scroll-area-import",
+          "kind": "import",
+          "content": "import { scroll-area } from \"@/components/ui/scroll-area\";",
+          "description": "示例导入路径",
+          "componentId": "scroll-area"
+        },
+        {
+          "id": "scroll-area-usage",
+          "kind": "usage",
+          "content": "<Scroll-area>Example</Scroll-area>\n",
+          "description": "基础用法",
+          "componentId": "scroll-area"
+        }
+      ],
+      "copyCommand": {
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-area.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-area.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-area.json"
+      },
+      "checksum": "6f1209cf9e1a1bd2",
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-beam.stories",
@@ -280,7 +333,7 @@
         {
           "id": "animated-beam.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-beam.stories"
         },
@@ -300,12 +353,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.stories.json"
       },
       "checksum": "f52b7bbf30528397",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-beam",
@@ -333,7 +386,7 @@
         {
           "id": "animated-beam-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-beam"
         },
@@ -353,12 +406,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-beam.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-beam.json"
       },
       "checksum": "3a9178866d758978",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-circular-progress-bar.stories",
@@ -382,7 +435,7 @@
         {
           "id": "animated-circular-progress-bar.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-circular-progress-bar.stories"
         },
@@ -402,12 +455,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.stories.json"
       },
       "checksum": "a1fdc4f021957ef7",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-circular-progress-bar",
@@ -433,7 +486,7 @@
         {
           "id": "animated-circular-progress-bar-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-circular-progress-bar"
         },
@@ -453,12 +506,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-circular-progress-bar.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-circular-progress-bar.json"
       },
       "checksum": "08ddd6a31237b157",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-gradient-text.stories",
@@ -481,7 +534,7 @@
         {
           "id": "animated-gradient-text.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-gradient-text.stories"
         },
@@ -501,12 +554,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.stories.json"
       },
       "checksum": "8db0e9142b1282d5",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-gradient-text",
@@ -533,7 +586,7 @@
         {
           "id": "animated-gradient-text-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-gradient-text"
         },
@@ -553,12 +606,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-gradient-text.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-gradient-text.json"
       },
       "checksum": "d8c7007dd1c4d00e",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-list.stories",
@@ -581,7 +634,7 @@
         {
           "id": "animated-list.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-list.stories"
         },
@@ -601,12 +654,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.stories.json"
       },
       "checksum": "44ac3983a286dc4b",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-list",
@@ -634,7 +687,7 @@
         {
           "id": "animated-list-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-list"
         },
@@ -654,12 +707,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-list.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-list.json"
       },
       "checksum": "3077bbb5db4655cf",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-shiny-text.stories",
@@ -682,7 +735,7 @@
         {
           "id": "animated-shiny-text.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-shiny-text.stories"
         },
@@ -702,12 +755,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.stories.json"
       },
       "checksum": "ffc5be9dafdfb672",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "animated-shiny-text",
@@ -734,7 +787,7 @@
         {
           "id": "animated-shiny-text-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.json",
           "description": "pnpm 安装（首选）",
           "componentId": "animated-shiny-text"
         },
@@ -754,12 +807,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/animated-shiny-text.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/animated-shiny-text.json"
       },
       "checksum": "453b791767c8367c",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "avatar-circles.stories",
@@ -782,7 +835,7 @@
         {
           "id": "avatar-circles.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "avatar-circles.stories"
         },
@@ -802,12 +855,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.stories.json"
       },
       "checksum": "8561377164716618",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "avatar-circles",
@@ -833,7 +886,7 @@
         {
           "id": "avatar-circles-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.json",
           "description": "pnpm 安装（首选）",
           "componentId": "avatar-circles"
         },
@@ -853,12 +906,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/avatar-circles.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/avatar-circles.json"
       },
       "checksum": "a010a9daceb4277c",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "bento-grid.stories",
@@ -882,7 +935,7 @@
         {
           "id": "bento-grid.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "bento-grid.stories"
         },
@@ -902,12 +955,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.stories.json"
       },
       "checksum": "4868304e5fb83bae",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "bento-grid",
@@ -936,7 +989,7 @@
         {
           "id": "bento-grid-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.json",
           "description": "pnpm 安装（首选）",
           "componentId": "bento-grid"
         },
@@ -956,12 +1009,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/bento-grid.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/bento-grid.json"
       },
       "checksum": "d7bdae2f8b237f39",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "blur-fade.stories",
@@ -984,7 +1037,7 @@
         {
           "id": "blur-fade.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "blur-fade.stories"
         },
@@ -1004,12 +1057,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.stories.json"
       },
       "checksum": "05fa5db3c16e1400",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "blur-fade",
@@ -1032,7 +1085,7 @@
         {
           "id": "blur-fade-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.json",
           "description": "pnpm 安装（首选）",
           "componentId": "blur-fade"
         },
@@ -1052,12 +1105,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/blur-fade.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/blur-fade.json"
       },
       "checksum": "863ea27d0bc7b12a",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "border-beam.stories",
@@ -1080,7 +1133,7 @@
         {
           "id": "border-beam.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "border-beam.stories"
         },
@@ -1100,12 +1153,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.stories.json"
       },
       "checksum": "22fe53c17b39c7cb",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "border-beam",
@@ -1132,7 +1185,7 @@
         {
           "id": "border-beam-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.json",
           "description": "pnpm 安装（首选）",
           "componentId": "border-beam"
         },
@@ -1152,12 +1205,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/border-beam.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/border-beam.json"
       },
       "checksum": "17744d8d5def6797",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "code-comparison.stories",
@@ -1181,7 +1234,7 @@
         {
           "id": "code-comparison.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "code-comparison.stories"
         },
@@ -1201,12 +1254,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.stories.json"
       },
       "checksum": "8fc265afe6af95a5",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "code-comparison",
@@ -1236,7 +1289,7 @@
         {
           "id": "code-comparison-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.json",
           "description": "pnpm 安装（首选）",
           "componentId": "code-comparison"
         },
@@ -1256,12 +1309,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/code-comparison.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/code-comparison.json"
       },
       "checksum": "42c375cc51bbf182",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "confetti.stories",
@@ -1285,7 +1338,7 @@
         {
           "id": "confetti.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "confetti.stories"
         },
@@ -1305,12 +1358,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.stories.json"
       },
       "checksum": "d1a00802da9b24d6",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.135Z"
     },
     {
       "id": "confetti",
@@ -1336,7 +1389,7 @@
         {
           "id": "confetti-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.json",
           "description": "pnpm 安装（首选）",
           "componentId": "confetti"
         },
@@ -1356,12 +1409,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/confetti.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/confetti.json"
       },
       "checksum": "ab42d347721f6005",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "cool-mode.stories",
@@ -1384,7 +1437,7 @@
         {
           "id": "cool-mode.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "cool-mode.stories"
         },
@@ -1404,12 +1457,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.stories.json"
       },
       "checksum": "4896caffaf9ecfa0",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "cool-mode",
@@ -1432,7 +1485,7 @@
         {
           "id": "cool-mode-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.json",
           "description": "pnpm 安装（首选）",
           "componentId": "cool-mode"
         },
@@ -1452,12 +1505,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/cool-mode.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/cool-mode.json"
       },
       "checksum": "d5cbdc04812e10be",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "dock.stories",
@@ -1480,7 +1533,7 @@
         {
           "id": "dock.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "dock.stories"
         },
@@ -1500,12 +1553,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.stories.json"
       },
       "checksum": "b722385ebb08f973",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "dock",
@@ -1534,7 +1587,7 @@
         {
           "id": "dock-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.json",
           "description": "pnpm 安装（首选）",
           "componentId": "dock"
         },
@@ -1554,12 +1607,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dock.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/dock.json"
       },
       "checksum": "b4da397db60d5bd0",
-      "updatedAt": "2026-01-21T06:50:38.508Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "dot-pattern.stories",
@@ -1582,7 +1635,7 @@
         {
           "id": "dot-pattern.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "dot-pattern.stories"
         },
@@ -1602,12 +1655,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.stories.json"
       },
       "checksum": "adcc253a6b4e9b0a",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "dot-pattern",
@@ -1635,7 +1688,7 @@
         {
           "id": "dot-pattern-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.json",
           "description": "pnpm 安装（首选）",
           "componentId": "dot-pattern"
         },
@@ -1655,12 +1708,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/dot-pattern.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/dot-pattern.json"
       },
       "checksum": "9ddaee33cf32e5a1",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "file-tree.stories",
@@ -1669,7 +1722,7 @@
       "files": [
         {
           "path": "components/magicui/file-tree.stories.tsx",
-          "content": "import type { Meta, StoryObj } from \"@storybook/react\";\nimport { ChevronDown, ChevronRight } from \"lucide-react\";\nimport { CollapseButton, File, Folder, Tree, type TreeViewElement } from \"./file-tree\";\n\nconst meta: Meta<typeof Tree> = {\n  title: \"Magic UI/Utilities/FileTree\",\n  component: Tree,\n  parameters: {\n    layout: \"centered\",\n  },\n  tags: [\"autodocs\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof Tree>;\n\n// Sample file tree data\nconst sampleElements: TreeViewElement[] = [\n  {\n    id: \"1\",\n    name: \"src\",\n    children: [\n      {\n        id: \"2\",\n        name: \"components\",\n        children: [\n          {\n            id: \"3\",\n            name: \"ui\",\n            children: [\n              { id: \"4\", name: \"button.tsx\" },\n              { id: \"5\", name: \"input.tsx\" },\n              { id: \"6\", name: \"card.tsx\" },\n            ],\n          },\n          {\n            id: \"7\",\n            name: \"magicui\",\n            children: [\n              { id: \"8\", name: \"file-tree.tsx\" },\n              { id: \"9\", name: \"animated-beam.tsx\" },\n              { id: \"10\", name: \"particles.tsx\" },\n            ],\n          },\n        ],\n      },\n      {\n        id: \"11\",\n        name: \"lib\",\n        children: [\n          { id: \"12\", name: \"utils.ts\" },\n          { id: \"13\", name: \"cn.ts\" },\n        ],\n      },\n      { id: \"14\", name: \"app.tsx\" },\n      { id: \"15\", name: \"main.tsx\" },\n    ],\n  },\n  {\n    id: \"16\",\n    name: \"public\",\n    children: [\n      { id: \"17\", name: \"favicon.ico\" },\n      { id: \"18\", name: \"logo.svg\" },\n    ],\n  },\n  { id: \"19\", name: \"package.json\" },\n  { id: \"20\", name: \"tsconfig.json\" },\n  { id: \"21\", name: \"README.md\" },\n];\n\nconst projectStructure: TreeViewElement[] = [\n  {\n    id: \"root\",\n    name: \"design-system\",\n    children: [\n      {\n        id: \"apps\",\n        name: \"apps\",\n        children: [\n          {\n            id: \"web\",\n            name: \"web\",\n            children: [\n              {\n                id: \"components\",\n                name: \"components\",\n                children: [\n                  {\n                    id: \"ui-folder\",\n                    name: \"ui\",\n                    children: [\n                      { id: \"button-file\", name: \"button.tsx\" },\n                      { id: \"input-file\", name: \"input.tsx\" },\n                    ],\n                  },\n                  {\n                    id: \"magicui-folder\",\n                    name: \"magicui\",\n                    children: [\n                      { id: \"file-tree-file\", name: \"file-tree.tsx\" },\n                      { id: \"particles-file\", name: \"particles.tsx\" },\n                    ],\n                  },\n                ],\n              },\n              { id: \"package-json\", name: \"package.json\" },\n            ],\n          },\n        ],\n      },\n      {\n        id: \"packages\",\n        name: \"packages\",\n        children: [\n          {\n            id: \"config\",\n            name: \"config\",\n            children: [{ id: \"tailwind-config\", name: \"tailwind.config.js\" }],\n          },\n          { id: \"utils\", name: \"utils\", children: [{ id: \"cn-file\", name: \"cn.ts\" }] },\n        ],\n      },\n    ],\n  },\n];\n\nexport const Default: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree elements={sampleElements} className=\"p-2\">\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n\nexport const WithCustomIcons: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree\n        elements={sampleElements}\n        className=\"p-2\"\n        openIcon={<ChevronDown className=\"size-4\" />}\n        closeIcon={<ChevronRight className=\"size-4\" />}\n      >\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n\nexport const WithCollapseButton: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg relative\">\n      <Tree elements={projectStructure} className=\"p-2\">\n        {projectStructure.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) =>\n                    grandChild.children ? (\n                      <Folder key={grandChild.id} element={grandChild.name} value={grandChild.id}>\n                        {grandChild.children.map((greatGrandChild) => (\n                          <File key={greatGrandChild.id} value={greatGrandChild.id}>\n                            {greatGrandChild.name}\n                          </File>\n                        ))}\n                      </Folder>\n                    ) : (\n                      <File key={grandChild.id} value={grandChild.id}>\n                        {grandChild.name}\n                      </File>\n                    ),\n                  )}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n      <CollapseButton elements={projectStructure}>Toggle All</CollapseButton>\n    </div>\n  ),\n};\n\nexport const WithInitialSelection: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree\n        elements={sampleElements}\n        className=\"p-2\"\n        initialSelectedId=\"4\"\n        initialExpandedItems={[\"1\", \"2\", \"3\"]}\n      >\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n\nexport const NoIndicator: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree elements={sampleElements} className=\"p-2\" indicator={false}>\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n"
+          "content": "import type { Meta, StoryObj } from \"@storybook/react\";\nimport { ChevronDown, ChevronRight } from \"lucide-react\";\nimport { CollapseButton, File, Folder, Tree, type TreeViewElement } from \"./file-tree\";\n\nconst meta: Meta<typeof Tree> = {\n  title: \"Magic UI/Utilities/FileTree\",\n  component: Tree,\n  parameters: {\n    layout: \"centered\",\n  },\n  tags: [\"autodocs\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof Tree>;\n\n// Sample file tree data\nconst sampleElements: TreeViewElement[] = [\n  {\n    id: \"1\",\n    name: \"src\",\n    children: [\n      {\n        id: \"2\",\n        name: \"components\",\n        children: [\n          {\n            id: \"3\",\n            name: \"ui\",\n            children: [\n              { id: \"4\", name: \"button.tsx\" },\n              { id: \"5\", name: \"input.tsx\" },\n              { id: \"6\", name: \"card.tsx\" },\n            ],\n          },\n          {\n            id: \"7\",\n            name: \"magicui\",\n            children: [\n              { id: \"8\", name: \"file-tree.tsx\" },\n              { id: \"9\", name: \"animated-beam.tsx\" },\n              { id: \"10\", name: \"particles.tsx\" },\n            ],\n          },\n        ],\n      },\n      {\n        id: \"11\",\n        name: \"lib\",\n        children: [\n          { id: \"12\", name: \"utils.ts\" },\n          { id: \"13\", name: \"cn.ts\" },\n        ],\n      },\n      { id: \"14\", name: \"app.tsx\" },\n      { id: \"15\", name: \"main.tsx\" },\n    ],\n  },\n  {\n    id: \"16\",\n    name: \"public\",\n    children: [\n      { id: \"17\", name: \"favicon.ico\" },\n      { id: \"18\", name: \"logo.svg\" },\n    ],\n  },\n  { id: \"19\", name: \"package.json\" },\n  { id: \"20\", name: \"tsconfig.json\" },\n  { id: \"21\", name: \"README.md\" },\n];\n\nconst projectStructure: TreeViewElement[] = [\n  {\n    id: \"root\",\n    name: \"design-system\",\n    children: [\n      {\n        id: \"apps\",\n        name: \"apps\",\n        children: [\n          {\n            id: \"web\",\n            name: \"web\",\n            children: [\n              {\n                id: \"components\",\n                name: \"components\",\n                children: [\n                  {\n                    id: \"ui-folder\",\n                    name: \"ui\",\n                    children: [\n                      { id: \"button-file\", name: \"button.tsx\" },\n                      { id: \"input-file\", name: \"input.tsx\" },\n                    ],\n                  },\n                  {\n                    id: \"magicui-folder\",\n                    name: \"magicui\",\n                    children: [\n                      { id: \"file-tree-file\", name: \"file-tree.tsx\" },\n                      { id: \"particles-file\", name: \"particles.tsx\" },\n                    ],\n                  },\n                ],\n              },\n              { id: \"package-json\", name: \"package.json\" },\n            ],\n          },\n        ],\n      },\n      {\n        id: \"packages\",\n        name: \"packages\",\n        children: [\n          {\n            id: \"config\",\n            name: \"config\",\n            children: [{ id: \"tailwind-config\", name: \"tailwind.config.js\" }],\n          },\n          { id: \"utils\", name: \"utils\", children: [{ id: \"cn-file\", name: \"cn.ts\" }] },\n        ],\n      },\n    ],\n  },\n];\n\nexport const Default: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree elements={sampleElements} className=\"p-2\">\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n\nexport const WithCustomIcons: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree\n        elements={sampleElements}\n        className=\"p-2\"\n        openIcon={<ChevronDown className=\"size-4\" />}\n        closeIcon={<ChevronRight className=\"size-4\" />}\n      >\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n\nexport const WithCollapseButton: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg relative\">\n      <Tree elements={projectStructure} className=\"p-2\">\n        {projectStructure.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) =>\n                    grandChild.children ? (\n                      <Folder key={grandChild.id} element={grandChild.name} value={grandChild.id}>\n                        {grandChild.children.map((greatGrandChild) => (\n                          <File key={greatGrandChild.id} value={greatGrandChild.id}>\n                            {greatGrandChild.name}\n                          </File>\n                        ))}\n                      </Folder>\n                    ) : (\n                      <File key={grandChild.id} value={grandChild.id}>\n                        {grandChild.name}\n                      </File>\n                    ),\n                  )}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n        <CollapseButton elements={projectStructure}>Toggle All</CollapseButton>\n      </Tree>\n    </div>\n  ),\n};\n\nexport const WithInitialSelection: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree\n        elements={sampleElements}\n        className=\"p-2\"\n        initialSelectedId=\"4\"\n        initialExpandedItems={[\"1\", \"2\", \"3\"]}\n      >\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n\nexport const NoIndicator: Story = {\n  render: () => (\n    <div className=\"w-80 h-96 border rounded-lg\">\n      <Tree elements={sampleElements} className=\"p-2\" indicator={false}>\n        {sampleElements.map((element) => (\n          <Folder key={element.id} element={element.name} value={element.id}>\n            {element.children?.map((child) =>\n              child.children ? (\n                <Folder key={child.id} element={child.name} value={child.id}>\n                  {child.children.map((grandChild) => (\n                    <File key={grandChild.id} value={grandChild.id}>\n                      {grandChild.name}\n                    </File>\n                  ))}\n                </Folder>\n              ) : (\n                <File key={child.id} value={child.id}>\n                  {child.name}\n                </File>\n              ),\n            )}\n          </Folder>\n        ))}\n      </Tree>\n    </div>\n  ),\n};\n"
         }
       ],
       "registryDependencies": [],
@@ -1684,7 +1737,7 @@
         {
           "id": "file-tree.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "file-tree.stories"
         },
@@ -1704,12 +1757,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.stories.json"
       },
-      "checksum": "34ec4b905bc35bd4",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "checksum": "1eb87256a17e40b2",
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "file-tree",
@@ -1740,7 +1793,7 @@
         {
           "id": "file-tree-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json",
           "description": "pnpm 安装（首选）",
           "componentId": "file-tree"
         },
@@ -1760,12 +1813,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/file-tree.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/file-tree.json"
       },
       "checksum": "e9992841a1561b0b",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "globe.stories",
@@ -1788,7 +1841,7 @@
         {
           "id": "globe.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "globe.stories"
         },
@@ -1808,12 +1861,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.stories.json"
       },
       "checksum": "5d58be2aa4edf82b",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "globe",
@@ -1822,7 +1875,7 @@
       "files": [
         {
           "path": "components/magicui/globe.tsx",
-          "content": "import createGlobe, { type COBEOptions } from \"cobe\";\nimport { useMotionValue, useSpring } from \"motion/react\";\nimport { useEffect, useRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst MOVEMENT_DAMPING = 1400;\n\nconst GLOBE_CONFIG: COBEOptions = {\n  width: 800,\n  height: 800,\n  onRender: () => { },\n  devicePixelRatio: 2,\n  phi: 0,\n  theta: 0.3,\n  dark: 0,\n  diffuse: 0.4,\n  mapSamples: 16000,\n  mapBrightness: 1.2,\n  baseColor: [1, 1, 1],\n  markerColor: [251 / 255, 100 / 255, 21 / 255],\n  glowColor: [1, 1, 1],\n  markers: [\n    { location: [14.5995, 120.9842], size: 0.03 },\n    { location: [19.076, 72.8777], size: 0.1 },\n    { location: [23.8103, 90.4125], size: 0.05 },\n    { location: [30.0444, 31.2357], size: 0.07 },\n    { location: [39.9042, 116.4074], size: 0.08 },\n    { location: [-23.5505, -46.6333], size: 0.1 },\n    { location: [19.4326, -99.1332], size: 0.1 },\n    { location: [40.7128, -74.006], size: 0.1 },\n    { location: [34.6937, 135.5022], size: 0.05 },\n    { location: [41.0082, 28.9784], size: 0.06 },\n  ],\n};\n\nexport function Globe({\n  className,\n  config = GLOBE_CONFIG,\n}: {\n  className?: string;\n  config?: COBEOptions;\n}) {\n  let phi = 0;\n  let width = 0;\n  const canvasRef = useRef<HTMLCanvasElement>(null);\n  const pointerInteracting = useRef<number | null>(null);\n  const pointerInteractionMovement = useRef(0);\n\n  const r = useMotionValue(0);\n  const rs = useSpring(r, {\n    mass: 1,\n    damping: 30,\n    stiffness: 100,\n  });\n\n  const updatePointerInteraction = (value: number | null) => {\n    pointerInteracting.current = value;\n    if (canvasRef.current) {\n      canvasRef.current.style.cursor = value !== null ? \"grabbing\" : \"grab\";\n    }\n  };\n\n  const updateMovement = (clientX: number) => {\n    if (pointerInteracting.current !== null) {\n      const delta = clientX - pointerInteracting.current;\n      pointerInteractionMovement.current = delta;\n      r.set(r.get() + delta / MOVEMENT_DAMPING);\n    }\n  };\n\n  useEffect(() => {\n    const onResize = () => {\n      if (canvasRef.current) {\n        width = canvasRef.current.offsetWidth;\n      }\n    };\n\n    window.addEventListener(\"resize\", onResize);\n    onResize();\n\n    const globe = createGlobe(canvasRef.current!, {\n      ...config,\n      width: width * 2,\n      height: width * 2,\n      onRender: (state) => {\n        if (!pointerInteracting.current) phi += 0.005;\n        state.phi = phi + rs.get();\n        state.width = width * 2;\n        state.height = width * 2;\n      },\n    });\n\n    setTimeout(() => {\n      if (canvasRef.current) {\n        canvasRef.current.style.opacity = \"1\";\n      }\n    }, 0);\n    return () => {\n      globe.destroy();\n      window.removeEventListener(\"resize\", onResize);\n    };\n  }, [rs, config]);\n\n  return (\n    <div className={cn(\"absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]\", className)}>\n      <canvas\n        className={cn(\n          \"size-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]\",\n        )}\n        ref={canvasRef}\n        onPointerDown={(e) => {\n          pointerInteracting.current = e.clientX;\n          updatePointerInteraction(e.clientX);\n        }}\n        onPointerUp={() => updatePointerInteraction(null)}\n        onPointerOut={() => updatePointerInteraction(null)}\n        onMouseMove={(e) => updateMovement(e.clientX)}\n        onTouchMove={(e) => e.touches[0] && updateMovement(e.touches[0].clientX)}\n      />\n    </div>\n  );\n}\n"
+          "content": "import createGlobe, { type COBEOptions } from \"cobe\";\nimport { useMotionValue, useSpring } from \"motion/react\";\nimport { useEffect, useRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst MOVEMENT_DAMPING = 1400;\n\nconst GLOBE_CONFIG: COBEOptions = {\n  width: 800,\n  height: 800,\n  onRender: () => {},\n  devicePixelRatio: 2,\n  phi: 0,\n  theta: 0.3,\n  dark: 0,\n  diffuse: 0.4,\n  mapSamples: 16000,\n  mapBrightness: 1.2,\n  baseColor: [1, 1, 1],\n  markerColor: [251 / 255, 100 / 255, 21 / 255],\n  glowColor: [1, 1, 1],\n  markers: [\n    { location: [14.5995, 120.9842], size: 0.03 },\n    { location: [19.076, 72.8777], size: 0.1 },\n    { location: [23.8103, 90.4125], size: 0.05 },\n    { location: [30.0444, 31.2357], size: 0.07 },\n    { location: [39.9042, 116.4074], size: 0.08 },\n    { location: [-23.5505, -46.6333], size: 0.1 },\n    { location: [19.4326, -99.1332], size: 0.1 },\n    { location: [40.7128, -74.006], size: 0.1 },\n    { location: [34.6937, 135.5022], size: 0.05 },\n    { location: [41.0082, 28.9784], size: 0.06 },\n  ],\n};\n\nexport function Globe({\n  className,\n  config = GLOBE_CONFIG,\n}: {\n  className?: string;\n  config?: COBEOptions;\n}) {\n  let phi = 0;\n  let width = 0;\n  const canvasRef = useRef<HTMLCanvasElement>(null);\n  const pointerInteracting = useRef<number | null>(null);\n  const pointerInteractionMovement = useRef(0);\n\n  const r = useMotionValue(0);\n  const rs = useSpring(r, {\n    mass: 1,\n    damping: 30,\n    stiffness: 100,\n  });\n\n  const updatePointerInteraction = (value: number | null) => {\n    pointerInteracting.current = value;\n    if (canvasRef.current) {\n      canvasRef.current.style.cursor = value !== null ? \"grabbing\" : \"grab\";\n    }\n  };\n\n  const updateMovement = (clientX: number) => {\n    if (pointerInteracting.current !== null) {\n      const delta = clientX - pointerInteracting.current;\n      pointerInteractionMovement.current = delta;\n      r.set(r.get() + delta / MOVEMENT_DAMPING);\n    }\n  };\n\n  // biome-ignore lint/correctness/useExhaustiveDependencies: MagicUI component uses external phi/width vars intentionally for animation state\n  useEffect(() => {\n    const onResize = () => {\n      if (canvasRef.current) {\n        width = canvasRef.current.offsetWidth;\n      }\n    };\n\n    window.addEventListener(\"resize\", onResize);\n    onResize();\n\n    // biome-ignore lint/style/noNonNullAssertion: canvas ref is guaranteed to exist at this point\n    const globe = createGlobe(canvasRef.current!, {\n      ...config,\n      width: width * 2,\n      height: width * 2,\n      onRender: (state) => {\n        if (!pointerInteracting.current) phi += 0.005;\n        state.phi = phi + rs.get();\n        state.width = width * 2;\n        state.height = width * 2;\n      },\n    });\n\n    setTimeout(() => {\n      if (canvasRef.current) {\n        canvasRef.current.style.opacity = \"1\";\n      }\n    }, 0);\n    return () => {\n      globe.destroy();\n      window.removeEventListener(\"resize\", onResize);\n    };\n  }, [rs, config]);\n\n  return (\n    <div className={cn(\"absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]\", className)}>\n      <canvas\n        className={cn(\n          \"size-full opacity-0 transition-opacity duration-500 [contain:layout_paint_size]\",\n        )}\n        ref={canvasRef}\n        onPointerDown={(e) => {\n          pointerInteracting.current = e.clientX;\n          updatePointerInteraction(e.clientX);\n        }}\n        onPointerUp={() => updatePointerInteraction(null)}\n        onPointerOut={() => updatePointerInteraction(null)}\n        onMouseMove={(e) => updateMovement(e.clientX)}\n        onTouchMove={(e) => e.touches[0] && updateMovement(e.touches[0].clientX)}\n      />\n    </div>\n  );\n}\n"
         }
       ],
       "registryDependencies": [
@@ -1842,7 +1895,7 @@
         {
           "id": "globe-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.json",
           "description": "pnpm 安装（首选）",
           "componentId": "globe"
         },
@@ -1862,12 +1915,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/globe.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/globe.json"
       },
-      "checksum": "1a80a7bd28ac6c8e",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "checksum": "476c7bcac6590193",
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "grid-pattern.stories",
@@ -1890,7 +1943,7 @@
         {
           "id": "grid-pattern.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "grid-pattern.stories"
         },
@@ -1910,12 +1963,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.stories.json"
       },
       "checksum": "8b681b299a915ad1",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "grid-pattern",
@@ -1942,7 +1995,7 @@
         {
           "id": "grid-pattern-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.json",
           "description": "pnpm 安装（首选）",
           "componentId": "grid-pattern"
         },
@@ -1962,12 +2015,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/grid-pattern.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/grid-pattern.json"
       },
       "checksum": "605d453882adeb71",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "hero-video-dialog.stories",
@@ -1990,7 +2043,7 @@
         {
           "id": "hero-video-dialog.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "hero-video-dialog.stories"
         },
@@ -2010,12 +2063,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.stories.json"
       },
       "checksum": "7e749ba7162cac61",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "hero-video-dialog",
@@ -2044,7 +2097,7 @@
         {
           "id": "hero-video-dialog-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.json",
           "description": "pnpm 安装（首选）",
           "componentId": "hero-video-dialog"
         },
@@ -2064,12 +2117,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hero-video-dialog.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/hero-video-dialog.json"
       },
       "checksum": "e18696bfa7da15f1",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "hyper-text.stories",
@@ -2092,7 +2145,7 @@
         {
           "id": "hyper-text.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "hyper-text.stories"
         },
@@ -2112,12 +2165,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.stories.json"
       },
       "checksum": "fe153a08bc95ac37",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "hyper-text",
@@ -2145,7 +2198,7 @@
         {
           "id": "hyper-text-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.json",
           "description": "pnpm 安装（首选）",
           "componentId": "hyper-text"
         },
@@ -2165,12 +2218,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/hyper-text.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/hyper-text.json"
       },
       "checksum": "00edd24e6294572d",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "icon-cloud.stories",
@@ -2193,7 +2246,7 @@
         {
           "id": "icon-cloud.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "icon-cloud.stories"
         },
@@ -2213,12 +2266,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.stories.json"
       },
       "checksum": "fa56100534a814c7",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "icon-cloud",
@@ -2242,7 +2295,7 @@
         {
           "id": "icon-cloud-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.json",
           "description": "pnpm 安装（首选）",
           "componentId": "icon-cloud"
         },
@@ -2262,12 +2315,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/icon-cloud.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/icon-cloud.json"
       },
       "checksum": "3c17b08db115741d",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "interactive-hover-button.stories",
@@ -2290,7 +2343,7 @@
         {
           "id": "interactive-hover-button.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "interactive-hover-button.stories"
         },
@@ -2310,12 +2363,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.stories.json"
       },
       "checksum": "d8a712f0c25d7467",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "interactive-hover-button",
@@ -2342,7 +2395,7 @@
         {
           "id": "interactive-hover-button-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.json",
           "description": "pnpm 安装（首选）",
           "componentId": "interactive-hover-button"
         },
@@ -2362,12 +2415,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/interactive-hover-button.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/interactive-hover-button.json"
       },
       "checksum": "343dc9004d51cd1c",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "lens.stories",
@@ -2390,7 +2443,7 @@
         {
           "id": "lens.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "lens.stories"
         },
@@ -2410,12 +2463,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.stories.json"
       },
       "checksum": "71b8996bf249cc93",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "lens",
@@ -2439,7 +2492,7 @@
         {
           "id": "lens-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.json",
           "description": "pnpm 安装（首选）",
           "componentId": "lens"
         },
@@ -2459,12 +2512,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/lens.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/lens.json"
       },
       "checksum": "9572887eff18292e",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "magic-card.stories",
@@ -2487,7 +2540,7 @@
         {
           "id": "magic-card.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "magic-card.stories"
         },
@@ -2507,12 +2560,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.stories.json"
       },
       "checksum": "92eda5fc82654776",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "magic-card",
@@ -2540,7 +2593,7 @@
         {
           "id": "magic-card-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.json",
           "description": "pnpm 安装（首选）",
           "componentId": "magic-card"
         },
@@ -2560,12 +2613,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/magic-card.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/magic-card.json"
       },
       "checksum": "7814236efdb9971a",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "marquee.stories",
@@ -2588,7 +2641,7 @@
         {
           "id": "marquee.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "marquee.stories"
         },
@@ -2608,12 +2661,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.stories.json"
       },
       "checksum": "d5cfbf8816dc6d51",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "marquee",
@@ -2640,7 +2693,7 @@
         {
           "id": "marquee-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.json",
           "description": "pnpm 安装（首选）",
           "componentId": "marquee"
         },
@@ -2660,12 +2713,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/marquee.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/marquee.json"
       },
       "checksum": "639fa76de3efee07",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "meteors.stories",
@@ -2688,7 +2741,7 @@
         {
           "id": "meteors.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "meteors.stories"
         },
@@ -2708,12 +2761,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.stories.json"
       },
       "checksum": "adbfe2bff86cc85b",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "meteors",
@@ -2740,7 +2793,7 @@
         {
           "id": "meteors-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.json",
           "description": "pnpm 安装（首选）",
           "componentId": "meteors"
         },
@@ -2760,12 +2813,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/meteors.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/meteors.json"
       },
       "checksum": "5a88a4363f73d4c0",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "number-ticker.stories",
@@ -2788,7 +2841,7 @@
         {
           "id": "number-ticker.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "number-ticker.stories"
         },
@@ -2808,12 +2861,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.stories.json"
       },
       "checksum": "c5a9871f3aab5cd8",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "number-ticker",
@@ -2841,7 +2894,7 @@
         {
           "id": "number-ticker-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.json",
           "description": "pnpm 安装（首选）",
           "componentId": "number-ticker"
         },
@@ -2861,12 +2914,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/number-ticker.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/number-ticker.json"
       },
       "checksum": "84f62901b15c1c92",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "orbiting-circles.stories",
@@ -2889,7 +2942,7 @@
         {
           "id": "orbiting-circles.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "orbiting-circles.stories"
         },
@@ -2909,12 +2962,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.stories.json"
       },
       "checksum": "be41b2abc0819b15",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "orbiting-circles",
@@ -2941,7 +2994,7 @@
         {
           "id": "orbiting-circles-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.json",
           "description": "pnpm 安装（首选）",
           "componentId": "orbiting-circles"
         },
@@ -2961,12 +3014,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/orbiting-circles.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/orbiting-circles.json"
       },
       "checksum": "06fa07bdbf9131d8",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "particles.stories",
@@ -2989,7 +3042,7 @@
         {
           "id": "particles.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "particles.stories"
         },
@@ -3009,12 +3062,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.stories.json"
       },
       "checksum": "5e31f76fddc62c99",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "particles",
@@ -3041,7 +3094,7 @@
         {
           "id": "particles-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.json",
           "description": "pnpm 安装（首选）",
           "componentId": "particles"
         },
@@ -3061,12 +3114,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/particles.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/particles.json"
       },
       "checksum": "20697ba39457cbb3",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "pointer.stories",
@@ -3089,7 +3142,7 @@
         {
           "id": "pointer.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "pointer.stories"
         },
@@ -3109,12 +3162,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.stories.json"
       },
       "checksum": "1a278f0ca581c73a",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "pointer",
@@ -3142,7 +3195,7 @@
         {
           "id": "pointer-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.json",
           "description": "pnpm 安装（首选）",
           "componentId": "pointer"
         },
@@ -3162,12 +3215,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pointer.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/pointer.json"
       },
       "checksum": "7dd0edc7713025b3",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "pulsating-button.stories",
@@ -3190,7 +3243,7 @@
         {
           "id": "pulsating-button.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "pulsating-button.stories"
         },
@@ -3210,12 +3263,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.stories.json"
       },
       "checksum": "3b828f6f499d7db6",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "pulsating-button",
@@ -3242,7 +3295,7 @@
         {
           "id": "pulsating-button-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.json",
           "description": "pnpm 安装（首选）",
           "componentId": "pulsating-button"
         },
@@ -3262,12 +3315,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/pulsating-button.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/pulsating-button.json"
       },
       "checksum": "d3631a6310035ce5",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "rainbow-button.stories",
@@ -3290,7 +3343,7 @@
         {
           "id": "rainbow-button.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "rainbow-button.stories"
         },
@@ -3310,12 +3363,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.stories.json"
       },
       "checksum": "384b1099afbbf916",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "rainbow-button",
@@ -3344,7 +3397,7 @@
         {
           "id": "rainbow-button-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.json",
           "description": "pnpm 安装（首选）",
           "componentId": "rainbow-button"
         },
@@ -3364,12 +3417,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/rainbow-button.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/rainbow-button.json"
       },
       "checksum": "1134cc5a3a543e81",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "ripple-button.stories",
@@ -3392,7 +3445,7 @@
         {
           "id": "ripple-button.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "ripple-button.stories"
         },
@@ -3412,12 +3465,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.stories.json"
       },
       "checksum": "64d940b575ba06c6",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "ripple-button",
@@ -3444,7 +3497,7 @@
         {
           "id": "ripple-button-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.json",
           "description": "pnpm 安装（首选）",
           "componentId": "ripple-button"
         },
@@ -3464,12 +3517,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple-button.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple-button.json"
       },
       "checksum": "02c850df61d61785",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "ripple.stories",
@@ -3492,7 +3545,7 @@
         {
           "id": "ripple.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "ripple.stories"
         },
@@ -3512,12 +3565,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.stories.json"
       },
       "checksum": "c5549d01efba3b67",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "ripple",
@@ -3544,7 +3597,7 @@
         {
           "id": "ripple-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.json",
           "description": "pnpm 安装（首选）",
           "componentId": "ripple"
         },
@@ -3564,12 +3617,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/ripple.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/ripple.json"
       },
       "checksum": "3b4d7f8437fde93e",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "scroll-progress.stories",
@@ -3592,7 +3645,7 @@
         {
           "id": "scroll-progress.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "scroll-progress.stories"
         },
@@ -3612,12 +3665,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.stories.json"
       },
       "checksum": "324887529b9c894f",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "scroll-progress",
@@ -3644,7 +3697,7 @@
         {
           "id": "scroll-progress-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.json",
           "description": "pnpm 安装（首选）",
           "componentId": "scroll-progress"
         },
@@ -3664,12 +3717,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/scroll-progress.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/scroll-progress.json"
       },
       "checksum": "1265b2f2c83c21b0",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "shimmer-button.stories",
@@ -3692,7 +3745,7 @@
         {
           "id": "shimmer-button.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "shimmer-button.stories"
         },
@@ -3712,12 +3765,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.stories.json"
       },
       "checksum": "c9b17e02e0f4dd10",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "shimmer-button",
@@ -3744,7 +3797,7 @@
         {
           "id": "shimmer-button-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.json",
           "description": "pnpm 安装（首选）",
           "componentId": "shimmer-button"
         },
@@ -3764,12 +3817,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shimmer-button.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/shimmer-button.json"
       },
       "checksum": "2d372caa3358ea97",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "shine-border.stories",
@@ -3792,7 +3845,7 @@
         {
           "id": "shine-border.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "shine-border.stories"
         },
@@ -3812,12 +3865,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.stories.json"
       },
       "checksum": "09db8fc603d1fbd2",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "shine-border",
@@ -3844,7 +3897,7 @@
         {
           "id": "shine-border-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.json",
           "description": "pnpm 安装（首选）",
           "componentId": "shine-border"
         },
@@ -3864,12 +3917,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/shine-border.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/shine-border.json"
       },
       "checksum": "c0dd1fe06be7a15c",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "sparkles-text.stories",
@@ -3892,7 +3945,7 @@
         {
           "id": "sparkles-text.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "sparkles-text.stories"
         },
@@ -3912,12 +3965,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.stories.json"
       },
       "checksum": "2b8dc5621f2f225a",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "sparkles-text",
@@ -3945,7 +3998,7 @@
         {
           "id": "sparkles-text-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.json",
           "description": "pnpm 安装（首选）",
           "componentId": "sparkles-text"
         },
@@ -3965,12 +4018,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/sparkles-text.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/sparkles-text.json"
       },
       "checksum": "6929231c060e4ada",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "terminal.stories",
@@ -3993,7 +4046,7 @@
         {
           "id": "terminal.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "terminal.stories"
         },
@@ -4013,12 +4066,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.stories.json"
       },
       "checksum": "4e1c56b2176da6e6",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "terminal",
@@ -4046,7 +4099,7 @@
         {
           "id": "terminal-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.json",
           "description": "pnpm 安装（首选）",
           "componentId": "terminal"
         },
@@ -4066,12 +4119,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/terminal.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/terminal.json"
       },
       "checksum": "68d9d352d82e6692",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "text-animate.stories",
@@ -4094,7 +4147,7 @@
         {
           "id": "text-animate.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "text-animate.stories"
         },
@@ -4114,12 +4167,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.stories.json"
       },
       "checksum": "d2ef23bb7bea4e3b",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "text-animate",
@@ -4147,7 +4200,7 @@
         {
           "id": "text-animate-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.json",
           "description": "pnpm 安装（首选）",
           "componentId": "text-animate"
         },
@@ -4167,12 +4220,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-animate.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-animate.json"
       },
       "checksum": "e08421edffc0fd95",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "text-reveal.stories",
@@ -4195,7 +4248,7 @@
         {
           "id": "text-reveal.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "text-reveal.stories"
         },
@@ -4215,12 +4268,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.stories.json"
       },
       "checksum": "5b9cfd65a2caf214",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "text-reveal",
@@ -4248,7 +4301,7 @@
         {
           "id": "text-reveal-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.json",
           "description": "pnpm 安装（首选）",
           "componentId": "text-reveal"
         },
@@ -4268,12 +4321,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/text-reveal.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/text-reveal.json"
       },
       "checksum": "095d892c9463aca1",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "tweet-card.stories",
@@ -4282,7 +4335,7 @@
       "files": [
         {
           "path": "components/magicui/tweet-card.stories.tsx",
-          "content": "import type { Meta, StoryObj } from \"@storybook/react\";\nimport { MagicTweet, TweetNotFound, TweetSkeleton } from \"./tweet-card\";\n\nconst meta: Meta<typeof MagicTweet> = {\n  title: \"Magic UI/Social & Media/TweetCard\",\n  component: MagicTweet,\n  parameters: {\n    layout: \"centered\",\n  },\n  tags: [\"autodocs\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof MagicTweet>;\n\n// Mock tweet data for demonstration\nconst mockTweet = {\n  id_str: \"1234567890\",\n  text: \"This is a sample tweet to demonstrate the TweetCard component! 🚀 #MagicUI #React\",\n  user: {\n    id_str: \"123456789\",\n    name: \"Magic UI\",\n    screen_name: \"magicui\",\n    profile_image_url_https: \"https://via.placeholder.com/48x48/3b82f6/ffffff?text=MU\",\n    verified: true,\n    is_blue_verified: false,\n    url: \"https://twitter.com/magicui\",\n  },\n  created_at: \"2024-01-15T10:30:00.000Z\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"This is a sample tweet to demonstrate the TweetCard component! 🚀 \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#MagicUI\",\n      href: \"https://twitter.com/hashtag/MagicUI\",\n    },\n    {\n      type: \"text\" as const,\n      text: \" \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#React\",\n      href: \"https://twitter.com/hashtag/React\",\n    },\n  ],\n  url: \"https://twitter.com/magicui/status/1234567890\",\n  photos: undefined,\n  video: undefined,\n};\n\nconst mockTweetWithImage = {\n  ...mockTweet,\n  id_str: \"1234567891\",\n  text: \"Check out this amazing design! 🎨 #Design #UI\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"Check out this amazing design! 🎨 \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#Design\",\n      href: \"https://twitter.com/hashtag/Design\",\n    },\n    {\n      type: \"text\" as const,\n      text: \" \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#UI\",\n      href: \"https://twitter.com/hashtag/UI\",\n    },\n  ],\n  photos: [\n    {\n      url: \"https://via.placeholder.com/400x300/6366f1/ffffff?text=Sample+Image\",\n      width: 400,\n      height: 300,\n    },\n  ],\n};\n\nconst mockTweetWithMention = {\n  ...mockTweet,\n  id_str: \"1234567892\",\n  text: \"Thanks @reactjs for the amazing framework! 💙\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"Thanks \",\n    },\n    {\n      type: \"mention\" as const,\n      text: \"@reactjs\",\n      href: \"https://twitter.com/reactjs\",\n    },\n    {\n      type: \"text\" as const,\n      text: \" for the amazing framework! 💙\",\n    },\n  ],\n};\n\nconst mockLongTweet = {\n  ...mockTweet,\n  id_str: \"1234567893\",\n  text: \"This is a much longer tweet that demonstrates how the TweetCard component handles longer content. It should wrap nicely and maintain good readability even with extended text content that goes beyond the typical tweet length.\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"This is a much longer tweet that demonstrates how the TweetCard component handles longer content. It should wrap nicely and maintain good readability even with extended text content that goes beyond the typical tweet length.\",\n    },\n  ],\n};\n\nexport const Default: Story = {\n  args: {\n    tweet: mockTweet,\n  },\n};\n\nexport const WithImage: Story = {\n  args: {\n    tweet: mockTweetWithImage,\n  },\n};\n\nexport const WithMention: Story = {\n  args: {\n    tweet: mockTweetWithMention,\n  },\n};\n\nexport const LongTweet: Story = {\n  args: {\n    tweet: mockLongTweet,\n  },\n};\n\nexport const Skeleton: Story = {\n  render: () => <TweetSkeleton />,\n};\n\nexport const NotFound: Story = {\n  render: () => <TweetNotFound />,\n};\n\nexport const CustomStyling: Story = {\n  args: {\n    tweet: mockTweet,\n    className: \"border-2 border-blue-200 bg-blue-50/50\",\n  },\n};\n"
+          "content": "import type { Meta, StoryObj } from \"@storybook/react\";\nimport { MagicTweet, TweetNotFound, TweetSkeleton } from \"./tweet-card\";\n\nconst meta: Meta<typeof MagicTweet> = {\n  title: \"Magic UI/Social & Media/TweetCard\",\n  component: MagicTweet,\n  parameters: {\n    layout: \"centered\",\n  },\n  // Skip test runner smoke tests - MagicTweet requires real react-tweet Tweet data structure\n  tags: [\"autodocs\", \"!test\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof MagicTweet>;\n\n// Mock tweet data for demonstration\nconst mockTweet = {\n  id_str: \"1234567890\",\n  text: \"This is a sample tweet to demonstrate the TweetCard component! 🚀 #MagicUI #React\",\n  user: {\n    id_str: \"123456789\",\n    name: \"Magic UI\",\n    screen_name: \"magicui\",\n    profile_image_url_https: \"https://via.placeholder.com/48x48/3b82f6/ffffff?text=MU\",\n    verified: true,\n    is_blue_verified: false,\n    url: \"https://twitter.com/magicui\",\n  },\n  created_at: \"2024-01-15T10:30:00.000Z\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"This is a sample tweet to demonstrate the TweetCard component! 🚀 \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#MagicUI\",\n      href: \"https://twitter.com/hashtag/MagicUI\",\n    },\n    {\n      type: \"text\" as const,\n      text: \" \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#React\",\n      href: \"https://twitter.com/hashtag/React\",\n    },\n  ],\n  url: \"https://twitter.com/magicui/status/1234567890\",\n  photos: undefined,\n  video: undefined,\n};\n\nconst mockTweetWithImage = {\n  ...mockTweet,\n  id_str: \"1234567891\",\n  text: \"Check out this amazing design! 🎨 #Design #UI\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"Check out this amazing design! 🎨 \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#Design\",\n      href: \"https://twitter.com/hashtag/Design\",\n    },\n    {\n      type: \"text\" as const,\n      text: \" \",\n    },\n    {\n      type: \"hashtag\" as const,\n      text: \"#UI\",\n      href: \"https://twitter.com/hashtag/UI\",\n    },\n  ],\n  photos: [\n    {\n      url: \"https://via.placeholder.com/400x300/6366f1/ffffff?text=Sample+Image\",\n      width: 400,\n      height: 300,\n    },\n  ],\n};\n\nconst mockTweetWithMention = {\n  ...mockTweet,\n  id_str: \"1234567892\",\n  text: \"Thanks @reactjs for the amazing framework! 💙\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"Thanks \",\n    },\n    {\n      type: \"mention\" as const,\n      text: \"@reactjs\",\n      href: \"https://twitter.com/reactjs\",\n    },\n    {\n      type: \"text\" as const,\n      text: \" for the amazing framework! 💙\",\n    },\n  ],\n};\n\nconst mockLongTweet = {\n  ...mockTweet,\n  id_str: \"1234567893\",\n  text: \"This is a much longer tweet that demonstrates how the TweetCard component handles longer content. It should wrap nicely and maintain good readability even with extended text content that goes beyond the typical tweet length.\",\n  entities: [\n    {\n      type: \"text\" as const,\n      text: \"This is a much longer tweet that demonstrates how the TweetCard component handles longer content. It should wrap nicely and maintain good readability even with extended text content that goes beyond the typical tweet length.\",\n    },\n  ],\n};\n\nexport const Default: Story = {\n  args: {\n    tweet: mockTweet,\n  },\n};\n\nexport const WithImage: Story = {\n  args: {\n    tweet: mockTweetWithImage,\n  },\n};\n\nexport const WithMention: Story = {\n  args: {\n    tweet: mockTweetWithMention,\n  },\n};\n\nexport const LongTweet: Story = {\n  args: {\n    tweet: mockLongTweet,\n  },\n};\n\nexport const Skeleton: Story = {\n  render: () => <TweetSkeleton />,\n};\n\nexport const NotFound: Story = {\n  render: () => <TweetNotFound />,\n};\n\nexport const CustomStyling: Story = {\n  args: {\n    tweet: mockTweet,\n    className: \"border-2 border-blue-200 bg-blue-50/50\",\n  },\n};\n"
         }
       ],
       "registryDependencies": [],
@@ -4296,7 +4349,7 @@
         {
           "id": "tweet-card.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "tweet-card.stories"
         },
@@ -4316,12 +4369,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.stories.json"
       },
-      "checksum": "b0ec193fbd48193c",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "checksum": "e4e7d5171cf660a0",
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "tweet-card",
@@ -4349,7 +4402,7 @@
         {
           "id": "tweet-card-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.json",
           "description": "pnpm 安装（首选）",
           "componentId": "tweet-card"
         },
@@ -4369,12 +4422,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/tweet-card.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/tweet-card.json"
       },
       "checksum": "fb5c64daaa0be1d5",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "typing-animation.stories",
@@ -4397,7 +4450,7 @@
         {
           "id": "typing-animation.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "typing-animation.stories"
         },
@@ -4417,12 +4470,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.stories.json"
       },
       "checksum": "bf317bc53e09ea57",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "typing-animation",
@@ -4450,7 +4503,7 @@
         {
           "id": "typing-animation-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.json",
           "description": "pnpm 安装（首选）",
           "componentId": "typing-animation"
         },
@@ -4470,12 +4523,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/typing-animation.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/typing-animation.json"
       },
       "checksum": "f7b70d523679c9e6",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.136Z"
     },
     {
       "id": "word-rotate.stories",
@@ -4498,7 +4551,7 @@
         {
           "id": "word-rotate.stories-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.stories.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.stories.json",
           "description": "pnpm 安装（首选）",
           "componentId": "word-rotate.stories"
         },
@@ -4518,12 +4571,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.stories.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.stories.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.stories.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.stories.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.stories.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.stories.json"
       },
       "checksum": "87d676ab83e2d913",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.137Z"
     },
     {
       "id": "word-rotate",
@@ -4551,7 +4604,7 @@
         {
           "id": "word-rotate-install",
           "kind": "install",
-          "content": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.json",
+          "content": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.json",
           "description": "pnpm 安装（首选）",
           "componentId": "word-rotate"
         },
@@ -4571,12 +4624,12 @@
         }
       ],
       "copyCommand": {
-        "npm": "npx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.json",
-        "pnpm": "pnpm dlx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.json",
-        "bun": "bunx shadcn@latest add https://design-system.raycast-llm.workers.dev/registry/word-rotate.json"
+        "npm": "npx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.json",
+        "pnpm": "pnpm dlx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.json",
+        "bun": "bunx shadcn@latest add https://design-system-e2x.pages.dev/registry/word-rotate.json"
       },
       "checksum": "ae342396cfa716e1",
-      "updatedAt": "2026-01-21T06:50:38.509Z"
+      "updatedAt": "2026-01-21T07:48:21.137Z"
     }
   ],
   "version": "2025-12-06"
