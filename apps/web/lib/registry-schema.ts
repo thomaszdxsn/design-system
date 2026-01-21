@@ -1,13 +1,33 @@
 /**
  * Registry Schema Types
- * Based on data-model.md and contracts/openapi.yaml
+ * Compatible with shadcn CLI v2+ registry format
+ * @see https://ui.shadcn.com/schema/registry.json
  */
 
-export type ComponentCategory = "ui" | "magic" | "blocks";
+export type ComponentCategory = "ui" | "magic" | "magicui" | "blocks";
 
+/**
+ * Registry item types supported by shadcn CLI v2+
+ */
+export type RegistryItemType =
+  | "registry:ui"
+  | "registry:component"
+  | "registry:hook"
+  | "registry:lib"
+  | "registry:block"
+  | "registry:page"
+  | "registry:file"
+  | "registry:style"
+  | "registry:theme";
+
+/**
+ * File entry with type annotation for shadcn CLI v2+
+ */
 export interface RegistryFile {
   path: string;
+  type: RegistryItemType;
   content: string;
+  target?: string;
 }
 
 export interface CopyCommand {
@@ -25,35 +45,63 @@ export interface CopyCommandEntry {
 }
 
 export interface TailwindConfig {
-  config?: string;
+  config?: Record<string, unknown>;
   css?: string;
 }
 
+/**
+ * Full registry entry (individual component JSON file)
+ * Compatible with shadcn CLI v2+ registry-item.json schema
+ */
 export interface RegistryEntry {
-  id?: string;
   name: string;
+  type: RegistryItemType;
   title?: string;
+  description?: string;
+  dependencies?: string[];
+  devDependencies?: string[];
+  registryDependencies?: string[];
   files: RegistryFile[];
-  registryDependencies: string[];
-  npmDependencies: string[];
   tailwind?: TailwindConfig;
-  copy?: CopyCommandEntry[];
-  copyCommand?: CopyCommand;
-  checksum?: string;
-  updatedAt?: string;
+  cssVars?: {
+    light?: Record<string, string>;
+    dark?: Record<string, string>;
+  };
+  // Extended fields for our registry
+  meta?: {
+    copy?: CopyCommandEntry[];
+    copyCommand?: CopyCommand;
+    checksum?: string;
+    updatedAt?: string;
+  };
 }
 
-export interface RegistrySummary {
-  id: string;
+/**
+ * Index item (summary for index.json items array)
+ * Contains only metadata, not full file contents
+ */
+export interface RegistryIndexItem {
   name: string;
-  category: ComponentCategory;
-  version: string;
+  type: RegistryItemType;
+  title?: string;
+  description?: string;
+  categories?: string[];
 }
 
+/**
+ * Root index.json structure for shadcn CLI v2+
+ */
 export interface RegistryIndex {
-  components: RegistrySummary[];
+  $schema: string;
+  name: string;
+  homepage: string;
+  items: RegistryIndexItem[];
 }
 
+/**
+ * Legacy types for backward compatibility during migration
+ * @deprecated Will be removed in future versions
+ */
 export interface ComponentSource {
   id: string;
   path: string;

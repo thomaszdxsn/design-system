@@ -1,0 +1,54 @@
+{
+  "name": "typing-animation",
+  "type": "registry:ui",
+  "title": "Typing Animation",
+  "description": "Typing Animation component",
+  "dependencies": [
+    "motion",
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "magicui/typing-animation.tsx",
+      "type": "registry:ui",
+      "content": "import { type MotionProps, motion, useInView } from \"motion/react\";\nimport { useEffect, useMemo, useRef, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface TypingAnimationProps extends MotionProps {\n  children?: string;\n  words?: string[];\n  className?: string;\n  duration?: number;\n  typeSpeed?: number;\n  deleteSpeed?: number;\n  delay?: number;\n  pauseDelay?: number;\n  loop?: boolean;\n  as?: React.ElementType;\n  startOnView?: boolean;\n  showCursor?: boolean;\n  blinkCursor?: boolean;\n  cursorStyle?: \"line\" | \"block\" | \"underscore\";\n}\n\nexport function TypingAnimation({\n  children,\n  words,\n  className,\n  duration = 100,\n  typeSpeed,\n  deleteSpeed,\n  delay = 0,\n  pauseDelay = 1000,\n  loop = false,\n  as: Component = \"span\",\n  startOnView = true,\n  showCursor = true,\n  blinkCursor = true,\n  cursorStyle = \"line\",\n  ...props\n}: TypingAnimationProps) {\n  const MotionComponent = motion.create(Component, {\n    forwardMotionProps: true,\n  });\n\n  const [displayedText, setDisplayedText] = useState<string>(\"\");\n  const [currentWordIndex, setCurrentWordIndex] = useState(0);\n  const [currentCharIndex, setCurrentCharIndex] = useState(0);\n  const [phase, setPhase] = useState<\"typing\" | \"pause\" | \"deleting\">(\"typing\");\n  const elementRef = useRef<HTMLElement | null>(null);\n  const isInView = useInView(elementRef as React.RefObject<Element>, {\n    amount: 0.3,\n    once: true,\n  });\n\n  const wordsToAnimate = useMemo(() => words || (children ? [children] : []), [words, children]);\n  const hasMultipleWords = wordsToAnimate.length > 1;\n\n  const typingSpeed = typeSpeed || duration;\n  const deletingSpeed = deleteSpeed || typingSpeed / 2;\n\n  const shouldStart = startOnView ? isInView : true;\n\n  useEffect(() => {\n    if (!shouldStart || wordsToAnimate.length === 0) return;\n\n    const timeoutDelay =\n      delay > 0 && displayedText === \"\"\n        ? delay\n        : phase === \"typing\"\n          ? typingSpeed\n          : phase === \"deleting\"\n            ? deletingSpeed\n            : pauseDelay;\n\n    const timeout = setTimeout(() => {\n      const currentWord = wordsToAnimate[currentWordIndex] || \"\";\n      const graphemes = Array.from(currentWord);\n\n      switch (phase) {\n        case \"typing\":\n          if (currentCharIndex < graphemes.length) {\n            setDisplayedText(graphemes.slice(0, currentCharIndex + 1).join(\"\"));\n            setCurrentCharIndex(currentCharIndex + 1);\n          } else {\n            if (hasMultipleWords || loop) {\n              const isLastWord = currentWordIndex === wordsToAnimate.length - 1;\n              if (!isLastWord || loop) {\n                setPhase(\"pause\");\n              }\n            }\n          }\n          break;\n\n        case \"pause\":\n          setPhase(\"deleting\");\n          break;\n\n        case \"deleting\":\n          if (currentCharIndex > 0) {\n            setDisplayedText(graphemes.slice(0, currentCharIndex - 1).join(\"\"));\n            setCurrentCharIndex(currentCharIndex - 1);\n          } else {\n            const nextIndex = (currentWordIndex + 1) % wordsToAnimate.length;\n            setCurrentWordIndex(nextIndex);\n            setPhase(\"typing\");\n          }\n          break;\n      }\n    }, timeoutDelay);\n\n    return () => clearTimeout(timeout);\n  }, [\n    shouldStart,\n    phase,\n    currentCharIndex,\n    currentWordIndex,\n    displayedText,\n    wordsToAnimate,\n    hasMultipleWords,\n    loop,\n    typingSpeed,\n    deletingSpeed,\n    pauseDelay,\n    delay,\n  ]);\n\n  const currentWordGraphemes = Array.from(wordsToAnimate[currentWordIndex] || \"\");\n  const isComplete =\n    !loop &&\n    currentWordIndex === wordsToAnimate.length - 1 &&\n    currentCharIndex >= currentWordGraphemes.length &&\n    phase !== \"deleting\";\n\n  const shouldShowCursor =\n    showCursor &&\n    !isComplete &&\n    (hasMultipleWords || loop || currentCharIndex < currentWordGraphemes.length);\n\n  const getCursorChar = () => {\n    switch (cursorStyle) {\n      case \"block\":\n        return \"▌\";\n      case \"underscore\":\n        return \"_\";\n      default:\n        return \"|\";\n    }\n  };\n\n  return (\n    <MotionComponent\n      ref={elementRef}\n      className={cn(\"leading-[5rem] tracking-[-0.02em]\", className)}\n      {...props}\n    >\n      {displayedText}\n      {shouldShowCursor && (\n        <span className={cn(\"inline-block\", blinkCursor && \"animate-blink-cursor\")}>\n          {getCursorChar()}\n        </span>\n      )}\n    </MotionComponent>\n  );\n}\n"
+    }
+  ],
+  "meta": {
+    "copy": [
+      {
+        "id": "typing-animation-install",
+        "kind": "install",
+        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/typing-animation.json\"",
+        "description": "pnpm 安装（首选）",
+        "componentId": "typing-animation"
+      },
+      {
+        "id": "typing-animation-import",
+        "kind": "import",
+        "content": "import { typing-animation } from \"@/components/ui/typing-animation\";",
+        "description": "示例导入路径",
+        "componentId": "typing-animation"
+      },
+      {
+        "id": "typing-animation-usage",
+        "kind": "usage",
+        "content": "<Typing-animation>Example</Typing-animation>\n",
+        "description": "基础用法",
+        "componentId": "typing-animation"
+      }
+    ],
+    "copyCommand": {
+      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/typing-animation.json\"",
+      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/typing-animation.json\"",
+      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/typing-animation.json\""
+    },
+    "checksum": "f7b70d523679c9e6",
+    "updatedAt": "2026-01-21T08:37:22.317Z"
+  }
+}

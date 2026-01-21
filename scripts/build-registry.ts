@@ -1,6 +1,7 @@
 /**
  * Registry Builder
- * Scans components and generates registry JSON files
+ * Generates shadcn CLI v2+ compatible registry JSON files
+ * @see https://ui.shadcn.com/schema/registry.json
  */
 
 import { createHash } from "node:crypto";
@@ -12,11 +13,14 @@ import type {
   CopyCommandEntry,
   RegistryEntry,
   RegistryIndex,
-  RegistrySummary,
+  RegistryIndexItem,
+  RegistryItemType,
 } from "../apps/web/lib/registry-schema";
-import { validateRegistryEntry } from "../apps/web/lib/validate-registry";
+import { validateRegistryEntry, validateRegistryIndex } from "../apps/web/lib/validate-registry";
 
-const REGISTRY_VERSION = "2025-12-06";
+const REGISTRY_SCHEMA_URL = "https://ui.shadcn.com/schema/registry.json";
+const REGISTRY_NAME = "@ds";
+const REGISTRY_HOMEPAGE = "https://design-system-e2x.pages.dev";
 const BUILD_BUDGET_MS = 1000; // SC-002
 const DEFAULT_DEV_OUT = "apps/web/public/registry";
 const DEFAULT_BUILD_OUT = "apps/web/storybook-static/registry";
@@ -27,6 +31,31 @@ interface ComponentMetadata {
   category: ComponentCategory;
   path: string;
   content: string;
+}
+
+/**
+ * Map component category to registry item type
+ */
+function getRegistryType(category: ComponentCategory): RegistryItemType {
+  switch (category) {
+    case "ui":
+    case "magic":
+    case "magicui":
+      return "registry:ui";
+    case "blocks":
+      return "registry:block";
+    default:
+      return "registry:ui";
+  }
+}
+
+/**
+ * Get file path in shadcn style (e.g., "ui/button.tsx")
+ */
+function getShadcnStylePath(category: ComponentCategory, id: string): string {
+  // Map our categories to shadcn-style paths
+  const categoryPath = category === "magicui" ? "magicui" : category;
+  return `${categoryPath}/${id}.tsx`;
 }
 
 /**
@@ -91,6 +120,7 @@ function extractDependencies(content: string): {
     if (importPath === "@/lib/utils") {
       npmDeps.add("clsx");
       npmDeps.add("tailwind-merge");
+      match = importRegex.exec(content);
       continue;
     }
 
@@ -103,11 +133,13 @@ function extractDependencies(content: string): {
           registryDeps.add(componentName);
         }
       }
+      match = importRegex.exec(content);
       continue;
     }
 
     // Skip workspace packages
     if (importPath.startsWith("@design-system/")) {
+      match = importRegex.exec(content);
       continue;
     }
 
@@ -139,13 +171,12 @@ function generateCopyCommand(
   pnpm: string;
   bun: string;
 } {
-  const baseUrl = process.env.REGISTRY_URL || "https://design-system-e2x.pages.dev/registry";
-  const registryPath = `${baseUrl}/${id}.json`;
+  const baseUrl = process.env.REGISTRY_URL || REGISTRY_HOMEPAGE;
 
   return {
-    npm: `npx shadcn@latest add ${registryPath}`,
-    pnpm: `pnpm dlx shadcn@latest add ${registryPath}`,
-    bun: `bunx shadcn@latest add ${registryPath}`,
+    npm: `npx shadcn@latest add "${baseUrl}/registry/${id}.json"`,
+    pnpm: `pnpm dlx shadcn@latest add "${baseUrl}/registry/${id}.json"`,
+    bun: `bunx shadcn@latest add "${baseUrl}/registry/${id}.json"`,
   };
 }
 
@@ -180,10 +211,12 @@ function buildCopyEntries(
 
 /**
  * Build registry entry from component metadata
+ * Outputs shadcn CLI v2+ compatible format
  */
 function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
   const deps = extractDependencies(component.content);
   const checksum = createHash("sha256").update(component.content).digest("hex").slice(0, 16);
+  const registryType = getRegistryType(component.category);
 
   // If the component uses @/lib/utils, add "utils" as a registry dependency
   const registryDeps = [...deps.registry];
@@ -194,22 +227,25 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
   const commands = generateCopyCommand(component.id, component.category);
 
   const entry: RegistryEntry = {
-    id: component.id,
     name: component.id,
+    type: registryType,
     title: component.name,
+    description: `${component.name} component`,
+    dependencies: deps.npm.length > 0 ? deps.npm : undefined,
+    registryDependencies: registryDeps.length > 0 ? registryDeps : undefined,
     files: [
       {
-        path: `components/${component.category}/${component.id}.tsx`,
+        path: getShadcnStylePath(component.category, component.id),
+        type: registryType,
         content: component.content,
       },
     ],
-    registryDependencies: registryDeps,
-    npmDependencies: deps.npm,
-    tailwind: { config: "@design-system/config/tailwind.config" },
-    copy: buildCopyEntries(component.id, commands),
-    copyCommand: commands,
-    checksum,
-    updatedAt: new Date().toISOString(),
+    meta: {
+      copy: buildCopyEntries(component.id, commands),
+      copyCommand: commands,
+      checksum,
+      updatedAt: new Date().toISOString(),
+    },
   };
 
   return entry;
@@ -221,7 +257,7 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
 async function buildRegistry(): Promise<void> {
   const startTime = performance.now();
 
-  console.info("🏗️  Building registry...");
+  console.info("🏗️  Building registry (shadcn CLI v2+ format)...");
   console.info("");
 
   // Scan component directories (exclude blocks - internal components)
@@ -240,7 +276,7 @@ async function buildRegistry(): Promise<void> {
 
   // Build registry entries
   const entries: RegistryEntry[] = [];
-  const summaries: RegistrySummary[] = [];
+  const indexItems: RegistryIndexItem[] = [];
 
   for (const component of allComponents) {
     const entry = buildRegistryEntry(component);
@@ -256,11 +292,14 @@ async function buildRegistry(): Promise<void> {
     }
 
     entries.push(entry);
-    summaries.push({
-      id: entry.id,
+
+    // Create index item (summary without file contents)
+    indexItems.push({
       name: entry.name,
-      category: component.category,
-      version: REGISTRY_VERSION,
+      type: entry.type,
+      title: entry.title,
+      description: entry.description,
+      categories: [component.category],
     });
 
     console.info(`✓ Built ${component.id}`);
@@ -275,17 +314,32 @@ async function buildRegistry(): Promise<void> {
 
   await mkdir(outputDir, { recursive: true });
 
-  const registryPayload = {
-    components: entries,
-    version: REGISTRY_VERSION,
-  };
-  const registryPath = join(outputDir, "registry.json");
-  await writeFile(registryPath, JSON.stringify(registryPayload, null, 2));
+  // Write individual component JSON files
+  for (const entry of entries) {
+    const componentPath = join(outputDir, `${entry.name}.json`);
+    await writeFile(componentPath, JSON.stringify(entry, null, 2));
+  }
+  console.info("");
+  console.info(`✓ Generated ${entries.length} individual component files`);
 
-  // Write index file (summaries)
+  // Build and validate index
   const index: RegistryIndex = {
-    components: summaries,
+    $schema: REGISTRY_SCHEMA_URL,
+    name: REGISTRY_NAME,
+    homepage: REGISTRY_HOMEPAGE,
+    items: indexItems,
   };
+
+  const indexValidation = validateRegistryIndex(index);
+  if (!indexValidation.valid) {
+    console.error("❌ Index validation failed:");
+    for (const error of indexValidation.errors) {
+      console.error(`   - ${error.field}: ${error.message}`);
+    }
+    process.exit(1);
+  }
+
+  // Write index file
   const indexPath = join(outputDir, "index.json");
   await writeFile(indexPath, JSON.stringify(index, null, 2));
 
@@ -295,6 +349,7 @@ async function buildRegistry(): Promise<void> {
   console.info(`✅ Registry built successfully in ${Math.round(duration)}ms`);
   console.info(`   Output: ${outputDir}`);
   console.info(`   Components: ${entries.length}`);
+  console.info("   Format: shadcn CLI v2+");
 
   if (duration > BUILD_BUDGET_MS) {
     console.warn("");
@@ -311,6 +366,7 @@ async function buildRegistry(): Promise<void> {
     budget: BUILD_BUDGET_MS,
     status: duration <= BUILD_BUDGET_MS ? "PASS" : "WARN",
     componentCount: entries.length,
+    format: "shadcn-v2",
   };
 
   await writeFile(join(logsDir, "build-registry.json"), JSON.stringify(logEntry, null, 2));

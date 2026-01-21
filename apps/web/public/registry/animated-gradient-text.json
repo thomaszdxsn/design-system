@@ -1,0 +1,53 @@
+{
+  "name": "animated-gradient-text",
+  "type": "registry:ui",
+  "title": "Animated Gradient Text",
+  "description": "Animated Gradient Text component",
+  "dependencies": [
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "magicui/animated-gradient-text.tsx",
+      "type": "registry:ui",
+      "content": "import type { ComponentPropsWithoutRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport interface AnimatedGradientTextProps extends ComponentPropsWithoutRef<\"div\"> {\n  speed?: number;\n  colorFrom?: string;\n  colorTo?: string;\n}\n\nexport function AnimatedGradientText({\n  children,\n  className,\n  speed = 1,\n  colorFrom = \"#ffaa40\",\n  colorTo = \"#9c40ff\",\n  ...props\n}: AnimatedGradientTextProps) {\n  return (\n    <span\n      style={\n        {\n          \"--bg-size\": `${speed * 300}%`,\n          \"--color-from\": colorFrom,\n          \"--color-to\": colorTo,\n        } as React.CSSProperties\n      }\n      className={cn(\n        \"animate-gradient inline bg-gradient-to-r from-[var(--color-from)] via-[var(--color-to)] to-[var(--color-from)] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent\",\n        className,\n      )}\n      {...props}\n    >\n      {children}\n    </span>\n  );\n}\n"
+    }
+  ],
+  "meta": {
+    "copy": [
+      {
+        "id": "animated-gradient-text-install",
+        "kind": "install",
+        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-gradient-text.json\"",
+        "description": "pnpm 安装（首选）",
+        "componentId": "animated-gradient-text"
+      },
+      {
+        "id": "animated-gradient-text-import",
+        "kind": "import",
+        "content": "import { animated-gradient-text } from \"@/components/ui/animated-gradient-text\";",
+        "description": "示例导入路径",
+        "componentId": "animated-gradient-text"
+      },
+      {
+        "id": "animated-gradient-text-usage",
+        "kind": "usage",
+        "content": "<Animated-gradient-text>Example</Animated-gradient-text>\n",
+        "description": "基础用法",
+        "componentId": "animated-gradient-text"
+      }
+    ],
+    "copyCommand": {
+      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-gradient-text.json\"",
+      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-gradient-text.json\"",
+      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-gradient-text.json\""
+    },
+    "checksum": "d8c7007dd1c4d00e",
+    "updatedAt": "2026-01-21T08:37:22.316Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "scroll-area",
+  "type": "registry:ui",
+  "title": "Scroll Area",
+  "description": "Scroll Area component",
+  "dependencies": [
+    "@radix-ui/react-scroll-area",
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "ui/scroll-area.tsx",
+      "type": "registry:ui",
+      "content": "\"use client\";\n\nimport * as ScrollAreaPrimitive from \"@radix-ui/react-scroll-area\";\nimport * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst ScrollArea = React.forwardRef<\n  React.ElementRef<typeof ScrollAreaPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>\n>(({ className, children, ...props }, ref) => (\n  <ScrollAreaPrimitive.Root\n    ref={ref}\n    className={cn(\"relative overflow-hidden\", className)}\n    {...props}\n  >\n    <ScrollAreaPrimitive.Viewport className=\"h-full w-full rounded-[inherit]\">\n      {children}\n    </ScrollAreaPrimitive.Viewport>\n    <ScrollBar />\n    <ScrollAreaPrimitive.Corner />\n  </ScrollAreaPrimitive.Root>\n));\nScrollArea.displayName = ScrollAreaPrimitive.Root.displayName;\n\nconst ScrollBar = React.forwardRef<\n  React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,\n  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>\n>(({ className, orientation = \"vertical\", ...props }, ref) => (\n  <ScrollAreaPrimitive.ScrollAreaScrollbar\n    ref={ref}\n    orientation={orientation}\n    className={cn(\n      \"flex touch-none select-none transition-colors\",\n      orientation === \"vertical\" && \"h-full w-2.5 border-l border-l-transparent p-[1px]\",\n      orientation === \"horizontal\" && \"h-2.5 flex-col border-t border-t-transparent p-[1px]\",\n      className,\n    )}\n    {...props}\n  >\n    <ScrollAreaPrimitive.ScrollAreaThumb className=\"relative flex-1 rounded-full bg-border\" />\n  </ScrollAreaPrimitive.ScrollAreaScrollbar>\n));\nScrollBar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName;\n\nexport { ScrollArea, ScrollBar };\n"
+    }
+  ],
+  "meta": {
+    "copy": [
+      {
+        "id": "scroll-area-install",
+        "kind": "install",
+        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-area.json\"",
+        "description": "pnpm 安装（首选）",
+        "componentId": "scroll-area"
+      },
+      {
+        "id": "scroll-area-import",
+        "kind": "import",
+        "content": "import { scroll-area } from \"@/components/ui/scroll-area\";",
+        "description": "示例导入路径",
+        "componentId": "scroll-area"
+      },
+      {
+        "id": "scroll-area-usage",
+        "kind": "usage",
+        "content": "<Scroll-area>Example</Scroll-area>\n",
+        "description": "基础用法",
+        "componentId": "scroll-area"
+      }
+    ],
+    "copyCommand": {
+      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-area.json\"",
+      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-area.json\"",
+      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-area.json\""
+    },
+    "checksum": "6f1209cf9e1a1bd2",
+    "updatedAt": "2026-01-21T08:37:22.316Z"
+  }
+}

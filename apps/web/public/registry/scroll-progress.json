@@ -1,0 +1,53 @@
+{
+  "name": "scroll-progress",
+  "type": "registry:ui",
+  "title": "Scroll Progress",
+  "description": "Scroll Progress component",
+  "dependencies": [
+    "motion",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "magicui/scroll-progress.tsx",
+      "type": "registry:ui",
+      "content": "import { type MotionProps, motion, useScroll } from \"motion/react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ScrollProgressProps extends Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps> {\n  ref?: React.Ref<HTMLDivElement>;\n}\n\nexport function ScrollProgress({ className, ref, ...props }: ScrollProgressProps) {\n  const { scrollYProgress } = useScroll();\n\n  return (\n    <motion.div\n      ref={ref}\n      className={cn(\n        \"fixed inset-x-0 top-0 z-50 h-px origin-left bg-gradient-to-r from-[#A97CF8] via-[#F38CB8] to-[#FDCC92]\",\n        className,\n      )}\n      style={{\n        scaleX: scrollYProgress,\n      }}\n      {...props}\n    />\n  );\n}\n"
+    }
+  ],
+  "meta": {
+    "copy": [
+      {
+        "id": "scroll-progress-install",
+        "kind": "install",
+        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-progress.json\"",
+        "description": "pnpm 安装（首选）",
+        "componentId": "scroll-progress"
+      },
+      {
+        "id": "scroll-progress-import",
+        "kind": "import",
+        "content": "import { scroll-progress } from \"@/components/ui/scroll-progress\";",
+        "description": "示例导入路径",
+        "componentId": "scroll-progress"
+      },
+      {
+        "id": "scroll-progress-usage",
+        "kind": "usage",
+        "content": "<Scroll-progress>Example</Scroll-progress>\n",
+        "description": "基础用法",
+        "componentId": "scroll-progress"
+      }
+    ],
+    "copyCommand": {
+      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-progress.json\"",
+      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-progress.json\"",
+      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/scroll-progress.json\""
+    },
+    "checksum": "1265b2f2c83c21b0",
+    "updatedAt": "2026-01-21T08:37:22.317Z"
+  }
+}

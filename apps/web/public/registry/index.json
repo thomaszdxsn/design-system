@@ -1,280 +1,421 @@
 {
-  "components": [
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "@ds",
+  "homepage": "https://design-system-e2x.pages.dev",
+  "items": [
     {
-      "id": "button",
       "name": "button",
-      "category": "ui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Button component",
+      "categories": [
+        "ui"
+      ]
     },
     {
-      "id": "copy-button",
       "name": "copy-button",
-      "category": "ui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Copy Button",
+      "description": "Copy Button component",
+      "categories": [
+        "ui"
+      ]
     },
     {
-      "id": "scroll-area",
       "name": "scroll-area",
-      "category": "ui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "Scroll Area component",
+      "categories": [
+        "ui"
+      ]
     },
     {
-      "id": "animated-beam",
       "name": "animated-beam",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Animated Beam",
+      "description": "Animated Beam component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "animated-circular-progress-bar",
       "name": "animated-circular-progress-bar",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Animated Circular Progress Bar",
+      "description": "Animated Circular Progress Bar component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "animated-gradient-text",
       "name": "animated-gradient-text",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Animated Gradient Text",
+      "description": "Animated Gradient Text component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "animated-list",
       "name": "animated-list",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Animated List",
+      "description": "Animated List component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "animated-shiny-text",
       "name": "animated-shiny-text",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Animated Shiny Text",
+      "description": "Animated Shiny Text component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "avatar-circles",
       "name": "avatar-circles",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Avatar Circles",
+      "description": "Avatar Circles component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "bento-grid",
       "name": "bento-grid",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Bento Grid",
+      "description": "Bento Grid component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "blur-fade",
       "name": "blur-fade",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Blur Fade",
+      "description": "Blur Fade component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "border-beam",
       "name": "border-beam",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Border Beam",
+      "description": "Border Beam component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "code-comparison",
       "name": "code-comparison",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Code Comparison",
+      "description": "Code Comparison component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "confetti",
       "name": "confetti",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Confetti",
+      "description": "Confetti component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "cool-mode",
       "name": "cool-mode",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Cool Mode",
+      "description": "Cool Mode component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "dock",
       "name": "dock",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Dock",
+      "description": "Dock component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "dot-pattern",
       "name": "dot-pattern",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Dot Pattern",
+      "description": "Dot Pattern component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "file-tree",
       "name": "file-tree",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "File Tree",
+      "description": "File Tree component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "globe",
       "name": "globe",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Globe",
+      "description": "Globe component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "grid-pattern",
       "name": "grid-pattern",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Grid Pattern",
+      "description": "Grid Pattern component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "hero-video-dialog",
       "name": "hero-video-dialog",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Hero Video Dialog",
+      "description": "Hero Video Dialog component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "hyper-text",
       "name": "hyper-text",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Hyper Text",
+      "description": "Hyper Text component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "icon-cloud",
       "name": "icon-cloud",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Icon Cloud",
+      "description": "Icon Cloud component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "interactive-hover-button",
       "name": "interactive-hover-button",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Interactive Hover Button",
+      "description": "Interactive Hover Button component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "lens",
       "name": "lens",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Lens",
+      "description": "Lens component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "magic-card",
       "name": "magic-card",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Magic Card",
+      "description": "Magic Card component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "marquee",
       "name": "marquee",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Marquee",
+      "description": "Marquee component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "meteors",
       "name": "meteors",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Meteors",
+      "description": "Meteors component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "number-ticker",
       "name": "number-ticker",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Number Ticker",
+      "description": "Number Ticker component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "orbiting-circles",
       "name": "orbiting-circles",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Orbiting Circles",
+      "description": "Orbiting Circles component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "particles",
       "name": "particles",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Particles",
+      "description": "Particles component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "pointer",
       "name": "pointer",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Pointer",
+      "description": "Pointer component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "pulsating-button",
       "name": "pulsating-button",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Pulsating Button",
+      "description": "Pulsating Button component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "rainbow-button",
       "name": "rainbow-button",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Rainbow Button",
+      "description": "Rainbow Button component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "ripple-button",
       "name": "ripple-button",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Ripple Button",
+      "description": "Ripple Button component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "ripple",
       "name": "ripple",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Ripple",
+      "description": "Ripple component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "scroll-progress",
       "name": "scroll-progress",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Scroll Progress",
+      "description": "Scroll Progress component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "shimmer-button",
       "name": "shimmer-button",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Shimmer Button",
+      "description": "Shimmer Button component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "shine-border",
       "name": "shine-border",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Shine Border",
+      "description": "Shine Border component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "sparkles-text",
       "name": "sparkles-text",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Sparkles Text",
+      "description": "Sparkles Text component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "terminal",
       "name": "terminal",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Terminal",
+      "description": "Terminal component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "text-animate",
       "name": "text-animate",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Text Animate",
+      "description": "Text Animate component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "text-reveal",
       "name": "text-reveal",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Text Reveal",
+      "description": "Text Reveal component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "tweet-card",
       "name": "tweet-card",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Tweet Card",
+      "description": "Tweet Card component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "typing-animation",
       "name": "typing-animation",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Typing Animation",
+      "description": "Typing Animation component",
+      "categories": [
+        "magicui"
+      ]
     },
     {
-      "id": "word-rotate",
       "name": "word-rotate",
-      "category": "magicui",
-      "version": "2025-12-06"
+      "type": "registry:ui",
+      "title": "Word Rotate",
+      "description": "Word Rotate component",
+      "categories": [
+        "magicui"
+      ]
     }
   ]
 }

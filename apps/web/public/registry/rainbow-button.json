@@ -1,0 +1,55 @@
+{
+  "name": "rainbow-button",
+  "type": "registry:ui",
+  "title": "Rainbow Button",
+  "description": "Rainbow Button component",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority",
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "magicui/rainbow-button.tsx",
+      "type": "registry:ui",
+      "content": "import { Slot } from \"@radix-ui/react-slot\";\nimport { type VariantProps, cva } from \"class-variance-authority\";\nimport React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst rainbowButtonVariants = cva(\n  cn(\n    \"relative cursor-pointer group transition-all animate-rainbow\",\n    \"inline-flex items-center justify-center gap-2 shrink-0\",\n    \"rounded-sm outline-none focus-visible:ring-[3px] aria-invalid:border-destructive\",\n    \"text-sm font-medium whitespace-nowrap\",\n    \"disabled:pointer-events-none disabled:opacity-50\",\n    \"[&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0\",\n  ),\n  {\n    variants: {\n      variant: {\n        default:\n          \"border-0 bg-[linear-gradient(#121213,#121213),linear-gradient(#121213_50%,rgba(18,18,19,0.6)_80%,rgba(18,18,19,0)),linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))] bg-[length:200%] text-primary-foreground [background-clip:padding-box,border-box,border-box] [background-origin:border-box] [border:calc(0.125rem)_solid_transparent] before:absolute before:bottom-[-20%] before:left-1/2 before:z-0 before:h-1/5 before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))] before:[filter:blur(0.75rem)] dark:bg-[linear-gradient(#fff,#fff),linear-gradient(#fff_50%,rgba(255,255,255,0.6)_80%,rgba(0,0,0,0)),linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))]\",\n        outline:\n          \"border border-input border-b-transparent bg-[linear-gradient(#ffffff,#ffffff),linear-gradient(#ffffff_50%,rgba(18,18,19,0.6)_80%,rgba(18,18,19,0)),linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))] bg-[length:200%] text-accent-foreground [background-clip:padding-box,border-box,border-box] [background-origin:border-box] before:absolute before:bottom-[-20%] before:left-1/2 before:z-0 before:h-1/5 before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))] before:[filter:blur(0.75rem)] dark:bg-[linear-gradient(#0a0a0a,#0a0a0a),linear-gradient(#0a0a0a_50%,rgba(255,255,255,0.6)_80%,rgba(0,0,0,0)),linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))]\",\n      },\n      size: {\n        default: \"h-9 px-4 py-2\",\n        sm: \"h-8 rounded-xl px-3 text-xs\",\n        lg: \"h-11 rounded-xl px-8\",\n        icon: \"size-9\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  },\n);\n\ninterface RainbowButtonProps\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof rainbowButtonVariants> {\n  asChild?: boolean;\n}\n\nconst RainbowButton = React.forwardRef<HTMLButtonElement, RainbowButtonProps>(\n  ({ className, variant, size, asChild = false, ...props }, ref) => {\n    const Comp = asChild ? Slot : \"button\";\n    return (\n      <Comp\n        data-slot=\"button\"\n        className={cn(rainbowButtonVariants({ variant, size, className }))}\n        ref={ref}\n        {...props}\n      />\n    );\n  },\n);\n\nRainbowButton.displayName = \"RainbowButton\";\n\nexport { RainbowButton, rainbowButtonVariants, type RainbowButtonProps };\n"
+    }
+  ],
+  "meta": {
+    "copy": [
+      {
+        "id": "rainbow-button-install",
+        "kind": "install",
+        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/rainbow-button.json\"",
+        "description": "pnpm 安装（首选）",
+        "componentId": "rainbow-button"
+      },
+      {
+        "id": "rainbow-button-import",
+        "kind": "import",
+        "content": "import { rainbow-button } from \"@/components/ui/rainbow-button\";",
+        "description": "示例导入路径",
+        "componentId": "rainbow-button"
+      },
+      {
+        "id": "rainbow-button-usage",
+        "kind": "usage",
+        "content": "<Rainbow-button>Example</Rainbow-button>\n",
+        "description": "基础用法",
+        "componentId": "rainbow-button"
+      }
+    ],
+    "copyCommand": {
+      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/rainbow-button.json\"",
+      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/rainbow-button.json\"",
+      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/rainbow-button.json\""
+    },
+    "checksum": "1134cc5a3a543e81",
+    "updatedAt": "2026-01-21T08:37:22.317Z"
+  }
+}

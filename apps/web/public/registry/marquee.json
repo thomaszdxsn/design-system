@@ -1,0 +1,53 @@
+{
+  "name": "marquee",
+  "type": "registry:ui",
+  "title": "Marquee",
+  "description": "Marquee component",
+  "dependencies": [
+    "react",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "magicui/marquee.tsx",
+      "type": "registry:ui",
+      "content": "import type { ComponentPropsWithoutRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface MarqueeProps extends ComponentPropsWithoutRef<\"div\"> {\n  /**\n   * Optional CSS class name to apply custom styles\n   */\n  className?: string;\n  /**\n   * Whether to reverse the animation direction\n   * @default false\n   */\n  reverse?: boolean;\n  /**\n   * Whether to pause the animation on hover\n   * @default false\n   */\n  pauseOnHover?: boolean;\n  /**\n   * Content to be displayed in the marquee\n   */\n  children: React.ReactNode;\n  /**\n   * Whether to animate vertically instead of horizontally\n   * @default false\n   */\n  vertical?: boolean;\n  /**\n   * Number of times to repeat the content\n   * @default 4\n   */\n  repeat?: number;\n}\n\nexport function Marquee({\n  className,\n  reverse = false,\n  pauseOnHover = false,\n  children,\n  vertical = false,\n  repeat = 4,\n  ...props\n}: MarqueeProps) {\n  return (\n    <div\n      {...props}\n      className={cn(\n        \"group flex [gap:var(--gap)] overflow-hidden p-2 [--duration:40s] [--gap:1rem]\",\n        {\n          \"flex-row\": !vertical,\n          \"flex-col\": vertical,\n        },\n        className,\n      )}\n    >\n      {Array(repeat)\n        .fill(0)\n        .map((_, i) => (\n          <div\n            key={i}\n            className={cn(\"flex shrink-0 justify-around [gap:var(--gap)]\", {\n              \"animate-marquee flex-row\": !vertical,\n              \"animate-marquee-vertical flex-col\": vertical,\n              \"group-hover:[animation-play-state:paused]\": pauseOnHover,\n              \"[animation-direction:reverse]\": reverse,\n            })}\n          >\n            {children}\n          </div>\n        ))}\n    </div>\n  );\n}\n"
+    }
+  ],
+  "meta": {
+    "copy": [
+      {
+        "id": "marquee-install",
+        "kind": "install",
+        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/marquee.json\"",
+        "description": "pnpm 安装（首选）",
+        "componentId": "marquee"
+      },
+      {
+        "id": "marquee-import",
+        "kind": "import",
+        "content": "import { marquee } from \"@/components/ui/marquee\";",
+        "description": "示例导入路径",
+        "componentId": "marquee"
+      },
+      {
+        "id": "marquee-usage",
+        "kind": "usage",
+        "content": "<Marquee>Example</Marquee>\n",
+        "description": "基础用法",
+        "componentId": "marquee"
+      }
+    ],
+    "copyCommand": {
+      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/marquee.json\"",
+      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/marquee.json\"",
+      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/marquee.json\""
+    },
+    "checksum": "639fa76de3efee07",
+    "updatedAt": "2026-01-21T08:37:22.317Z"
+  }
+}
