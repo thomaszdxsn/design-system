@@ -6,13 +6,9 @@ const meta: Meta<typeof MagicTweet> = {
   component: MagicTweet,
   parameters: {
     layout: "centered",
-    // Disable smoke tests for TweetCard as it requires real react-tweet Tweet data structure
-    // which is complex to mock correctly
-    test: {
-      disable: true,
-    },
   },
-  tags: ["autodocs"],
+  // Skip test runner smoke tests - MagicTweet requires real react-tweet Tweet data structure
+  tags: ["autodocs", "!test"],
 };
 
 export default meta;

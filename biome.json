@@ -49,10 +49,7 @@
   },
   "overrides": [
     {
-      "include": [
-        "*.stories.tsx",
-        "*.stories.ts"
-      ],
+      "include": ["*.stories.tsx", "*.stories.ts"],
       "linter": {
         "rules": {
           "style": {
