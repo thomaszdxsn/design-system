@@ -18,37 +18,5 @@
       "type": "registry:ui",
       "content": "\"use client\";\n\nimport { AnimatePresence, type MotionProps, motion } from \"motion/react\";\nimport React, { type ComponentPropsWithoutRef, useEffect, useMemo, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport function AnimatedListItem({ children }: { children: React.ReactNode }) {\n  const animations: MotionProps = {\n    initial: { scale: 0, opacity: 0 },\n    animate: { scale: 1, opacity: 1, originY: 0 },\n    exit: { scale: 0, opacity: 0 },\n    transition: { type: \"spring\", stiffness: 350, damping: 40 },\n  };\n\n  return (\n    <motion.div {...animations} layout className=\"mx-auto w-full\">\n      {children}\n    </motion.div>\n  );\n}\n\nexport interface AnimatedListProps extends ComponentPropsWithoutRef<\"div\"> {\n  children: React.ReactNode;\n  delay?: number;\n}\n\nexport const AnimatedList = React.memo(\n  ({ children, className, delay = 1000, ...props }: AnimatedListProps) => {\n    const [index, setIndex] = useState(0);\n    const childrenArray = useMemo(() => React.Children.toArray(children), [children]);\n\n    useEffect(() => {\n      if (index < childrenArray.length - 1) {\n        const timeout = setTimeout(() => {\n          setIndex((prevIndex) => (prevIndex + 1) % childrenArray.length);\n        }, delay);\n\n        return () => clearTimeout(timeout);\n      }\n    }, [index, delay, childrenArray.length]);\n\n    const itemsToShow = useMemo(() => {\n      const result = childrenArray.slice(0, index + 1).reverse();\n      return result;\n    }, [index, childrenArray]);\n\n    return (\n      <div className={cn(\"flex flex-col items-center gap-4\", className)} {...props}>\n        <AnimatePresence>\n          {itemsToShow.map((item) => (\n            <AnimatedListItem key={(item as React.ReactElement).key}>{item}</AnimatedListItem>\n          ))}\n        </AnimatePresence>\n      </div>\n    );\n  },\n);\n\nAnimatedList.displayName = \"AnimatedList\";\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "animated-list-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-list.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "animated-list"
-      },
-      {
-        "id": "animated-list-import",
-        "kind": "import",
-        "content": "import { animated-list } from \"@/components/ui/animated-list\";",
-        "description": "示例导入路径",
-        "componentId": "animated-list"
-      },
-      {
-        "id": "animated-list-usage",
-        "kind": "usage",
-        "content": "<Animated-list>Example</Animated-list>\n",
-        "description": "基础用法",
-        "componentId": "animated-list"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-list.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-list.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-list.json\""
-    },
-    "checksum": "3077bbb5db4655cf",
-    "updatedAt": "2026-01-21T08:37:22.316Z"
-  }
+  ]
 }

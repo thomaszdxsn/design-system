@@ -17,37 +17,5 @@
       "type": "registry:ui",
       "content": "import type { CSSProperties, ComponentPropsWithoutRef, FC } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport interface AnimatedShinyTextProps extends ComponentPropsWithoutRef<\"span\"> {\n  shimmerWidth?: number;\n}\n\nexport const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({\n  children,\n  className,\n  shimmerWidth = 100,\n  ...props\n}) => {\n  return (\n    <span\n      style={\n        {\n          \"--shiny-width\": `${shimmerWidth}px`,\n        } as CSSProperties\n      }\n      className={cn(\n        \"mx-auto max-w-md text-neutral-600/70 dark:text-neutral-400/70\",\n\n        // Shine effect\n        \"animate-shiny-text [background-size:var(--shiny-width)_100%] bg-clip-text [background-position:0_0] bg-no-repeat [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]\",\n\n        // Shine gradient\n        \"bg-gradient-to-r from-transparent via-black/80 via-50% to-transparent dark:via-white/80\",\n\n        className,\n      )}\n      {...props}\n    >\n      {children}\n    </span>\n  );\n};\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "animated-shiny-text-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-shiny-text.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "animated-shiny-text"
-      },
-      {
-        "id": "animated-shiny-text-import",
-        "kind": "import",
-        "content": "import { animated-shiny-text } from \"@/components/ui/animated-shiny-text\";",
-        "description": "示例导入路径",
-        "componentId": "animated-shiny-text"
-      },
-      {
-        "id": "animated-shiny-text-usage",
-        "kind": "usage",
-        "content": "<Animated-shiny-text>Example</Animated-shiny-text>\n",
-        "description": "基础用法",
-        "componentId": "animated-shiny-text"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-shiny-text.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-shiny-text.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/animated-shiny-text.json\""
-    },
-    "checksum": "453b791767c8367c",
-    "updatedAt": "2026-01-21T08:37:22.316Z"
-  }
+  ]
 }

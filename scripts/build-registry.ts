@@ -4,13 +4,11 @@
  * @see https://ui.shadcn.com/schema/registry.json
  */
 
-import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { basename, join, resolve } from "node:path";
 import { type ComponentRoot, getComponentRoot } from "../apps/web/lib/registry-paths";
 import type {
   ComponentCategory,
-  CopyCommandEntry,
   RegistryEntry,
   RegistryIndex,
   RegistryIndexItem,
@@ -161,61 +159,11 @@ function extractDependencies(content: string): {
 }
 
 /**
- * Generate copy command for a component
- */
-function generateCopyCommand(
-  id: string,
-  _category: string,
-): {
-  npm: string;
-  pnpm: string;
-  bun: string;
-} {
-  const baseUrl = process.env.REGISTRY_URL || REGISTRY_HOMEPAGE;
-
-  return {
-    npm: `npx shadcn@latest add "${baseUrl}/registry/${id}.json"`,
-    pnpm: `pnpm dlx shadcn@latest add "${baseUrl}/registry/${id}.json"`,
-    bun: `bunx shadcn@latest add "${baseUrl}/registry/${id}.json"`,
-  };
-}
-
-function buildCopyEntries(
-  id: string,
-  commands: { npm: string; pnpm: string; bun: string },
-): CopyCommandEntry[] {
-  return [
-    {
-      id: `${id}-install`,
-      kind: "install",
-      content: commands.pnpm,
-      description: "pnpm 安装（首选）",
-      componentId: id,
-    },
-    {
-      id: `${id}-import`,
-      kind: "import",
-      content: `import { ${id} } from "@/components/ui/${id}";`,
-      description: "示例导入路径",
-      componentId: id,
-    },
-    {
-      id: `${id}-usage`,
-      kind: "usage",
-      content: `<${id.charAt(0).toUpperCase() + id.slice(1)}>Example</${id.charAt(0).toUpperCase() + id.slice(1)}>\n`,
-      description: "基础用法",
-      componentId: id,
-    },
-  ];
-}
-
-/**
  * Build registry entry from component metadata
  * Outputs shadcn CLI v2+ compatible format
  */
 function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
   const deps = extractDependencies(component.content);
-  const checksum = createHash("sha256").update(component.content).digest("hex").slice(0, 16);
   const registryType = getRegistryType(component.category);
 
   // If the component uses @/lib/utils, add "utils" as a registry dependency
@@ -223,8 +171,6 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
   if (component.content.includes("@/lib/utils")) {
     registryDeps.push("utils");
   }
-
-  const commands = generateCopyCommand(component.id, component.category);
 
   const entry: RegistryEntry = {
     name: component.id,
@@ -240,12 +186,6 @@ function buildRegistryEntry(component: ComponentMetadata): RegistryEntry {
         content: component.content,
       },
     ],
-    meta: {
-      copy: buildCopyEntries(component.id, commands),
-      copyCommand: commands,
-      checksum,
-      updatedAt: new Date().toISOString(),
-    },
   };
 
   return entry;

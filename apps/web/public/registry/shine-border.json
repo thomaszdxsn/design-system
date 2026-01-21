@@ -17,37 +17,5 @@
       "type": "registry:ui",
       "content": "\"use client\";\n\nimport type * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ShineBorderProps extends React.HTMLAttributes<HTMLDivElement> {\n  /**\n   * Width of the border in pixels\n   * @default 1\n   */\n  borderWidth?: number;\n  /**\n   * Duration of the animation in seconds\n   * @default 14\n   */\n  duration?: number;\n  /**\n   * Color of the border, can be a single color or an array of colors\n   * @default \"#000000\"\n   */\n  shineColor?: string | string[];\n}\n\n/**\n * Shine Border\n *\n * An animated background border effect component with configurable properties.\n */\nexport function ShineBorder({\n  borderWidth = 1,\n  duration = 14,\n  shineColor = \"#000000\",\n  className,\n  style,\n  ...props\n}: ShineBorderProps) {\n  return (\n    <div\n      style={\n        {\n          \"--border-width\": `${borderWidth}px`,\n          \"--duration\": `${duration}s`,\n          backgroundImage: `radial-gradient(transparent,transparent, ${\n            Array.isArray(shineColor) ? shineColor.join(\",\") : shineColor\n          },transparent,transparent)`,\n          backgroundSize: \"300% 300%\",\n          mask: \"linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)\",\n          WebkitMask: \"linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)\",\n          WebkitMaskComposite: \"xor\",\n          maskComposite: \"exclude\",\n          padding: \"var(--border-width)\",\n          ...style,\n        } as React.CSSProperties\n      }\n      className={cn(\n        \"motion-safe:animate-shine pointer-events-none absolute inset-0 size-full rounded-[inherit] will-change-[background-position]\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "shine-border-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/shine-border.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "shine-border"
-      },
-      {
-        "id": "shine-border-import",
-        "kind": "import",
-        "content": "import { shine-border } from \"@/components/ui/shine-border\";",
-        "description": "示例导入路径",
-        "componentId": "shine-border"
-      },
-      {
-        "id": "shine-border-usage",
-        "kind": "usage",
-        "content": "<Shine-border>Example</Shine-border>\n",
-        "description": "基础用法",
-        "componentId": "shine-border"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/shine-border.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/shine-border.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/shine-border.json\""
-    },
-    "checksum": "c0dd1fe06be7a15c",
-    "updatedAt": "2026-01-21T08:37:22.317Z"
-  }
+  ]
 }

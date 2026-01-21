@@ -17,37 +17,5 @@
       "type": "registry:ui",
       "content": "import React, { type MouseEvent, useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface RippleButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  rippleColor?: string;\n  duration?: string;\n}\n\nexport const RippleButton = React.forwardRef<HTMLButtonElement, RippleButtonProps>(\n  (\n    { className, children, rippleColor = \"#ffffff\", duration = \"600ms\", onClick, ...props },\n    ref,\n  ) => {\n    const [buttonRipples, setButtonRipples] = useState<\n      Array<{ x: number; y: number; size: number; key: number }>\n    >([]);\n\n    const handleClick = (event: MouseEvent<HTMLButtonElement>) => {\n      createRipple(event);\n      onClick?.(event);\n    };\n\n    const createRipple = (event: MouseEvent<HTMLButtonElement>) => {\n      const button = event.currentTarget;\n      const rect = button.getBoundingClientRect();\n      const size = Math.max(rect.width, rect.height);\n      const x = event.clientX - rect.left - size / 2;\n      const y = event.clientY - rect.top - size / 2;\n\n      const newRipple = { x, y, size, key: Date.now() };\n      setButtonRipples((prevRipples) => [...prevRipples, newRipple]);\n    };\n\n    useEffect(() => {\n      if (buttonRipples.length > 0) {\n        const lastRipple = buttonRipples[buttonRipples.length - 1];\n        const timeout = setTimeout(() => {\n          setButtonRipples((prevRipples) =>\n            prevRipples.filter((ripple) => ripple.key !== lastRipple.key),\n          );\n        }, Number.parseInt(duration));\n        return () => clearTimeout(timeout);\n      }\n    }, [buttonRipples, duration]);\n\n    return (\n      <button\n        className={cn(\n          \"bg-background text-primary relative flex cursor-pointer items-center justify-center overflow-hidden rounded-lg border-2 px-4 py-2 text-center\",\n          className,\n        )}\n        onClick={handleClick}\n        ref={ref}\n        {...props}\n      >\n        <div className=\"relative z-10\">{children}</div>\n        <span className=\"pointer-events-none absolute inset-0\">\n          {buttonRipples.map((ripple) => (\n            <span\n              className=\"animate-rippling bg-background absolute rounded-full opacity-30\"\n              key={ripple.key}\n              style={{\n                width: `${ripple.size}px`,\n                height: `${ripple.size}px`,\n                top: `${ripple.y}px`,\n                left: `${ripple.x}px`,\n                backgroundColor: rippleColor,\n                transform: \"scale(0)\",\n              }}\n            />\n          ))}\n        </span>\n      </button>\n    );\n  },\n);\n\nRippleButton.displayName = \"RippleButton\";\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "ripple-button-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/ripple-button.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "ripple-button"
-      },
-      {
-        "id": "ripple-button-import",
-        "kind": "import",
-        "content": "import { ripple-button } from \"@/components/ui/ripple-button\";",
-        "description": "示例导入路径",
-        "componentId": "ripple-button"
-      },
-      {
-        "id": "ripple-button-usage",
-        "kind": "usage",
-        "content": "<Ripple-button>Example</Ripple-button>\n",
-        "description": "基础用法",
-        "componentId": "ripple-button"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/ripple-button.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/ripple-button.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/ripple-button.json\""
-    },
-    "checksum": "02c850df61d61785",
-    "updatedAt": "2026-01-21T08:37:22.317Z"
-  }
+  ]
 }

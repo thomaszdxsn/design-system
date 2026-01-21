@@ -67,13 +67,6 @@ export interface RegistryEntry {
     light?: Record<string, string>;
     dark?: Record<string, string>;
   };
-  // Extended fields for our registry
-  meta?: {
-    copy?: CopyCommandEntry[];
-    copyCommand?: CopyCommand;
-    checksum?: string;
-    updatedAt?: string;
-  };
 }
 
 /**

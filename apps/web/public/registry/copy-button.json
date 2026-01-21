@@ -17,37 +17,5 @@
       "type": "registry:ui",
       "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface CopyButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  value: string;\n  successLabel?: string;\n  fallbackLabel?: string;\n}\n\nasync function copyWithFallback(text: string): Promise<boolean> {\n  try {\n    await navigator.clipboard.writeText(text);\n    return true;\n  } catch {\n    try {\n      const textarea = document.createElement(\"textarea\");\n      textarea.value = text;\n      textarea.setAttribute(\"readonly\", \"\");\n      textarea.style.position = \"absolute\";\n      textarea.style.left = \"-9999px\";\n      document.body.appendChild(textarea);\n      textarea.select();\n      const result = document.execCommand(\"copy\");\n      document.body.removeChild(textarea);\n      return result;\n    } catch {\n      return false;\n    }\n  }\n}\n\nexport const CopyButton = React.forwardRef<HTMLButtonElement, CopyButtonProps>(\n  ({ value, className, children, successLabel = \"已复制\", fallbackLabel = \"复制失败\", ...props }, ref) => {\n    const [status, setStatus] = React.useState<\"idle\" | \"success\" | \"error\">(\"idle\");\n\n    const label = status === \"success\" ? successLabel : status === \"error\" ? fallbackLabel : children;\n\n    return (\n      <button\n        ref={ref}\n        type=\"button\"\n        className={cn(\n          \"inline-flex items-center gap-2 rounded-md border border-input bg-background px-3 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\",\n          className,\n        )}\n        aria-live=\"polite\"\n        onClick={async () => {\n          const ok = await copyWithFallback(value);\n          setStatus(ok ? \"success\" : \"error\");\n          setTimeout(() => setStatus(\"idle\"), 2000);\n        }}\n        {...props}\n      >\n        {label}\n      </button>\n    );\n  },\n);\n\nCopyButton.displayName = \"CopyButton\";\n\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "copy-button-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/copy-button.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "copy-button"
-      },
-      {
-        "id": "copy-button-import",
-        "kind": "import",
-        "content": "import { copy-button } from \"@/components/ui/copy-button\";",
-        "description": "示例导入路径",
-        "componentId": "copy-button"
-      },
-      {
-        "id": "copy-button-usage",
-        "kind": "usage",
-        "content": "<Copy-button>Example</Copy-button>\n",
-        "description": "基础用法",
-        "componentId": "copy-button"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/copy-button.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/copy-button.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/copy-button.json\""
-    },
-    "checksum": "a7bbf08e194ab1ef",
-    "updatedAt": "2026-01-21T08:37:22.316Z"
-  }
+  ]
 }

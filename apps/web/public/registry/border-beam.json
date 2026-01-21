@@ -17,37 +17,5 @@
       "type": "registry:ui",
       "content": "import { type MotionStyle, type Transition, motion } from \"motion/react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface BorderBeamProps {\n  /**\n   * The size of the border beam.\n   */\n  size?: number;\n  /**\n   * The duration of the border beam.\n   */\n  duration?: number;\n  /**\n   * The delay of the border beam.\n   */\n  delay?: number;\n  /**\n   * The color of the border beam from.\n   */\n  colorFrom?: string;\n  /**\n   * The color of the border beam to.\n   */\n  colorTo?: string;\n  /**\n   * The motion transition of the border beam.\n   */\n  transition?: Transition;\n  /**\n   * The class name of the border beam.\n   */\n  className?: string;\n  /**\n   * The style of the border beam.\n   */\n  style?: React.CSSProperties;\n  /**\n   * Whether to reverse the animation direction.\n   */\n  reverse?: boolean;\n  /**\n   * The initial offset position (0-100).\n   */\n  initialOffset?: number;\n  /**\n   * The border width of the beam.\n   */\n  borderWidth?: number;\n}\n\nexport const BorderBeam = ({\n  className,\n  size = 50,\n  delay = 0,\n  duration = 6,\n  colorFrom = \"#ffaa40\",\n  colorTo = \"#9c40ff\",\n  transition,\n  style,\n  reverse = false,\n  initialOffset = 0,\n  borderWidth = 1,\n}: BorderBeamProps) => {\n  return (\n    <div\n      className=\"pointer-events-none absolute inset-0 rounded-[inherit] border-(length:--border-beam-width) border-transparent [mask-image:linear-gradient(transparent,transparent),linear-gradient(#000,#000)] [mask-composite:intersect] [mask-clip:padding-box,border-box]\"\n      style={\n        {\n          \"--border-beam-width\": `${borderWidth}px`,\n        } as React.CSSProperties\n      }\n    >\n      <motion.div\n        className={cn(\n          \"absolute aspect-square\",\n          \"bg-gradient-to-l from-[var(--color-from)] via-[var(--color-to)] to-transparent\",\n          className,\n        )}\n        style={\n          {\n            width: size,\n            offsetPath: `rect(0 auto auto 0 round ${size}px)`,\n            \"--color-from\": colorFrom,\n            \"--color-to\": colorTo,\n            ...style,\n          } as MotionStyle\n        }\n        initial={{ offsetDistance: `${initialOffset}%` }}\n        animate={{\n          offsetDistance: reverse\n            ? [`${100 - initialOffset}%`, `${-initialOffset}%`]\n            : [`${initialOffset}%`, `${100 + initialOffset}%`],\n        }}\n        transition={{\n          repeat: Number.POSITIVE_INFINITY,\n          ease: \"linear\",\n          duration,\n          delay: -delay,\n          ...transition,\n        }}\n      />\n    </div>\n  );\n};\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "border-beam-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/border-beam.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "border-beam"
-      },
-      {
-        "id": "border-beam-import",
-        "kind": "import",
-        "content": "import { border-beam } from \"@/components/ui/border-beam\";",
-        "description": "示例导入路径",
-        "componentId": "border-beam"
-      },
-      {
-        "id": "border-beam-usage",
-        "kind": "usage",
-        "content": "<Border-beam>Example</Border-beam>\n",
-        "description": "基础用法",
-        "componentId": "border-beam"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/border-beam.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/border-beam.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/border-beam.json\""
-    },
-    "checksum": "17744d8d5def6797",
-    "updatedAt": "2026-01-21T08:37:22.316Z"
-  }
+  ]
 }

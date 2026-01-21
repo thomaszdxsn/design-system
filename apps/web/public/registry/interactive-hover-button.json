@@ -17,37 +17,5 @@
       "type": "registry:ui",
       "content": "import { ArrowRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport function InteractiveHoverButton({\n  children,\n  className,\n  ...props\n}: React.ButtonHTMLAttributes<HTMLButtonElement>) {\n  return (\n    <button\n      className={cn(\n        \"group bg-background relative w-auto cursor-pointer overflow-hidden rounded-full border p-2 px-6 text-center font-semibold\",\n        className,\n      )}\n      {...props}\n    >\n      <div className=\"flex items-center gap-2\">\n        <div className=\"bg-primary h-2 w-2 rounded-full transition-all duration-300 group-hover:scale-[100.8]\" />\n        <span className=\"inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0\">\n          {children}\n        </span>\n      </div>\n      <div className=\"text-primary-foreground absolute top-0 z-10 flex h-full w-full translate-x-12 items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:-translate-x-5 group-hover:opacity-100\">\n        <span>{children}</span>\n        <ArrowRight />\n      </div>\n    </button>\n  );\n}\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "interactive-hover-button-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/interactive-hover-button.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "interactive-hover-button"
-      },
-      {
-        "id": "interactive-hover-button-import",
-        "kind": "import",
-        "content": "import { interactive-hover-button } from \"@/components/ui/interactive-hover-button\";",
-        "description": "示例导入路径",
-        "componentId": "interactive-hover-button"
-      },
-      {
-        "id": "interactive-hover-button-usage",
-        "kind": "usage",
-        "content": "<Interactive-hover-button>Example</Interactive-hover-button>\n",
-        "description": "基础用法",
-        "componentId": "interactive-hover-button"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/interactive-hover-button.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/interactive-hover-button.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/interactive-hover-button.json\""
-    },
-    "checksum": "343dc9004d51cd1c",
-    "updatedAt": "2026-01-21T08:37:22.317Z"
-  }
+  ]
 }

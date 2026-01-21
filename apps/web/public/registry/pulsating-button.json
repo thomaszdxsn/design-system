@@ -17,37 +17,5 @@
       "type": "registry:ui",
       "content": "import React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface PulsatingButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  pulseColor?: string;\n  duration?: string;\n}\n\nexport const PulsatingButton = React.forwardRef<HTMLButtonElement, PulsatingButtonProps>(\n  ({ className, children, pulseColor = \"#808080\", duration = \"1.5s\", ...props }, ref) => {\n    return (\n      <button\n        ref={ref}\n        className={cn(\n          \"bg-primary text-primary-foreground relative flex cursor-pointer items-center justify-center rounded-lg px-4 py-2 text-center\",\n          className,\n        )}\n        style={\n          {\n            \"--pulse-color\": pulseColor,\n            \"--duration\": duration,\n          } as React.CSSProperties\n        }\n        {...props}\n      >\n        <div className=\"relative z-10\">{children}</div>\n        <div className=\"absolute top-1/2 left-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-lg bg-inherit\" />\n      </button>\n    );\n  },\n);\n\nPulsatingButton.displayName = \"PulsatingButton\";\n"
     }
-  ],
-  "meta": {
-    "copy": [
-      {
-        "id": "pulsating-button-install",
-        "kind": "install",
-        "content": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/pulsating-button.json\"",
-        "description": "pnpm 安装（首选）",
-        "componentId": "pulsating-button"
-      },
-      {
-        "id": "pulsating-button-import",
-        "kind": "import",
-        "content": "import { pulsating-button } from \"@/components/ui/pulsating-button\";",
-        "description": "示例导入路径",
-        "componentId": "pulsating-button"
-      },
-      {
-        "id": "pulsating-button-usage",
-        "kind": "usage",
-        "content": "<Pulsating-button>Example</Pulsating-button>\n",
-        "description": "基础用法",
-        "componentId": "pulsating-button"
-      }
-    ],
-    "copyCommand": {
-      "npm": "npx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/pulsating-button.json\"",
-      "pnpm": "pnpm dlx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/pulsating-button.json\"",
-      "bun": "bunx shadcn@latest add \"https://design-system-e2x.pages.dev/registry/pulsating-button.json\""
-    },
-    "checksum": "d3631a6310035ce5",
-    "updatedAt": "2026-01-21T08:37:22.317Z"
-  }
+  ]
 }
